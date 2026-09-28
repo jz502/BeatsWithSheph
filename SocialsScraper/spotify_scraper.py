@@ -285,44 +285,73 @@ def init_db(conn: sqlite3.Connection) -> None:
         """)
 
 
-def save_to_cache(conn: sqlite3.Connection, artist_id: str, data: Dict[str, Any]) -> None:
+def save_to_cache(conn: sqlite3.Connection, artist_id: str, new_data: Dict[str, Any]) -> None:
     """
-    Task 3: Executes two actions atomically in a single transaction:
-    1. UPSERT into metrics_cache table.
-    2. INSERT into historical_metrics table.
+    Saves metrics with delta calculation and deduplication:
+    1. Compares against existing metrics_cache.
+    2. Computes deltas (e.g., diff in followers, streams).
+    3. Always UPSERTs metrics_cache (for TTL freshness).
+    4. Only INSERTS into historical_metrics if metrics have actually changed.
     """
     now_iso = datetime.now(timezone.utc).isoformat()
-    json_data = json.dumps(data, ensure_ascii=False)
+    
+    with conn:  # Atomic transaction
+        cursor = conn.cursor()
+        
+        # 1. Fetch previous data to compute changes
+        cursor.execute("SELECT data FROM metrics_cache WHERE channel_id = ?", (artist_id,))
+        row = cursor.fetchone()
+        
+        has_changed = False
+        deltas = {}
+        
+        if row:
+            old_data = json.loads(row[0])
+            # Calculate differences for numeric fields
+            for key in ["spotify_monthly_listeners", "spotify_followers", 
+                        "spotify_top_track_1_streams", "spotify_top_10_cumulative_streams"]:
+                old_val = old_data.get(key, 0)
+                new_val = new_data.get(key, 0)
+                diff = new_val - old_val
+                deltas[f"delta_{key}"] = diff
+                if diff != 0:
+                    has_changed = True
+        else:
+            # First time seeing this artist: everything is new
+            has_changed = True
+            for key in ["spotify_monthly_listeners", "spotify_followers", 
+                        "spotify_top_track_1_streams", "spotify_top_10_cumulative_streams"]:
+                deltas[f"delta_{key}"] = new_data.get(key, 0)
 
-    try:
-        with conn:  # Context manager starts transaction and commits upon clean exit
-            cursor = conn.cursor()
+        # Merge deltas into the payload for historical tracking
+        historical_payload = {**new_data, "deltas": deltas}
+        new_data_json = json.dumps(new_data, ensure_ascii=False)
+        hist_data_json = json.dumps(historical_payload, ensure_ascii=False)
 
-            # 1. UPSERT into metrics_cache
-            cursor.execute(
-                """
-                INSERT INTO metrics_cache (channel_id, data, updated_at)
-                VALUES (?, ?, ?)
-                ON CONFLICT(channel_id) DO UPDATE SET
-                    data = excluded.data,
-                    updated_at = excluded.updated_at
-                """,
-                (artist_id, json_data, now_iso)
-            )
+        # 2. UPSERT into metrics_cache (maintains TTL)
+        cursor.execute(
+            """
+            INSERT INTO metrics_cache (channel_id, data, updated_at)
+            VALUES (?, ?, ?)
+            ON CONFLICT(channel_id) DO UPDATE SET
+                data = excluded.data,
+                updated_at = excluded.updated_at
+            """,
+            (artist_id, new_data_json, now_iso)
+        )
 
-            # 2. INSERT into historical_metrics
+        # 3. Only record to historical_metrics if there was an actual change
+        if has_changed:
             cursor.execute(
                 """
                 INSERT INTO historical_metrics (id, platform, entity_id, data, extracted_at)
                 VALUES (NULL, 'spotify', ?, ?, ?)
                 """,
-                (artist_id, json_data, now_iso)
+                (artist_id, hist_data_json, now_iso)
             )
-
-        logger.info("Successfully persisted metrics for artist %s to database.", artist_id)
-    except Exception as exc:
-        logger.error("Failed to save metrics to database: %s", exc)
-        raise
+            logger.info("Metrics changed for %s: recorded new historical entry with deltas.", artist_id)
+        else:
+            logger.info("No metrics changed for %s: updated TTL without duplicate historical entry.", artist_id)
 
 
 def main():

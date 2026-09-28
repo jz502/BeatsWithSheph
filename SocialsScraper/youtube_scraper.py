@@ -10,6 +10,7 @@ import subprocess
 import urllib.request
 import urllib.error
 import ssl
+from datetime import datetime, timezone
 
 try:
     import certifi
@@ -20,34 +21,52 @@ except Exception:
     except Exception:
         DEFAULT_SSL_CONTEXT = ssl._create_unverified_context()
 
-DB_PATH = 'socials_cache.db'
+DB_PATH = "socials_cache.db"
 TTL_SECONDS = 86400
 
 BROWSER_HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
-                  '(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-    'Accept-Language': 'en-US,en;q=0.9',
-    'Sec-Ch-Ua': '"Chromium";v="128", "Not;A=Brand";v="24", "Google Chrome";v="128"',
-    'Sec-Ch-Ua-Mobile': '?0',
-    'Sec-Ch-Ua-Platform': '"macOS"',
-    'Sec-Fetch-Dest': 'document',
-    'Sec-Fetch-Mode': 'navigate',
-    'Sec-Fetch-Site': 'none',
-    'Sec-Fetch-User': '?1',
-    'Upgrade-Insecure-Requests': '1'
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Sec-Ch-Ua": '"Chromium";v="128", "Not;A=Brand";v="24", "Google Chrome";v="128"',
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": '"macOS"',
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1"
 }
 
+TRACKED_METRIC_KEYS = [
+    "youtube_subscribers",
+    "youtube_total_views",
+    "youtube_video_count",
+    "youtube_recent_50_views",
+    "youtube_recent_50_likes",
+    "youtube_recent_50_comments",
+    "sb_subscribers_last_30_days",
+    "sb_views_last_30_days",
+    "sb_subscribers_last_14_days",
+    "sb_views_last_14_days",
+    "sb_daily_avg_views",
+    "sb_monthly_earnings_min",
+    "sb_monthly_earnings_max",
+    "sb_yearly_earnings_min",
+    "sb_yearly_earnings_max",
+]
+
 def fetch_json(url):
-    req = urllib.request.Request(url, headers={'User-Agent': BROWSER_HEADERS['User-Agent']})
+    req = urllib.request.Request(url, headers={"User-Agent": BROWSER_HEADERS["User-Agent"]})
     try:
         with urllib.request.urlopen(req, context=DEFAULT_SSL_CONTEXT) as response:
-            return json.loads(response.read().decode('utf-8'))
+            return json.loads(response.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
-        error_body = e.read().decode('utf-8', errors='ignore')
+        error_body = e.read().decode("utf-8", errors="ignore")
         try:
             error_json = json.loads(error_body)
-            msg = error_json.get('error', {}).get('message', str(e))
+            msg = error_json.get("error", {}).get("message", str(e))
         except Exception:
             msg = error_body or str(e)
         raise RuntimeError(f"YouTube API HTTP {e.code} error: {msg}")
@@ -55,11 +74,10 @@ def fetch_json(url):
         if isinstance(e.reason, ssl.SSLCertVerificationError) or "CERTIFICATE_VERIFY_FAILED" in str(e):
             unverified_ctx = ssl._create_unverified_context()
             with urllib.request.urlopen(req, context=unverified_ctx) as response:
-                return json.loads(response.read().decode('utf-8'))
+                return json.loads(response.read().decode("utf-8"))
         raise RuntimeError(f"Network error fetching YouTube API: {e.reason}")
 
 def fetch_socialblade_html(url):
-    # Strategy 1: curl_cffi (matches browser TLS fingerprint to bypass Cloudflare)
     try:
         from curl_cffi import requests as cffi_requests
         response = cffi_requests.get(url, impersonate="chrome120", headers=BROWSER_HEADERS, timeout=15)
@@ -72,20 +90,19 @@ def fetch_socialblade_html(url):
     except Exception as e:
         print(f"[Warning] curl_cffi attempt failed: {e}", file=sys.stderr)
 
-    # Strategy 2: System curl fallback
     cmd = [
-        'curl', '-sSL', '--compressed',
-        '-A', BROWSER_HEADERS['User-Agent'],
-        '-H', f"Accept: {BROWSER_HEADERS['Accept']}",
-        '-H', f"Accept-Language: {BROWSER_HEADERS['Accept-Language']}",
-        '-H', f"Sec-Ch-Ua: {BROWSER_HEADERS['Sec-Ch-Ua']}",
-        '-H', f"Sec-Ch-Ua-Platform: {BROWSER_HEADERS['Sec-Ch-Ua-Platform']}",
-        '-H', 'Sec-Fetch-Dest: document',
-        '-H', 'Sec-Fetch-Mode: navigate',
-        '-H', 'Sec-Fetch-Site: none',
-        '-H', 'Sec-Fetch-User: ?1',
-        '-H', 'Upgrade-Insecure-Requests: 1',
-        '--max-time', '15',
+        "curl", "-sSL", "--compressed",
+        "-A", BROWSER_HEADERS["User-Agent"],
+        "-H", f"Accept: {BROWSER_HEADERS['Accept']}",
+        "-H", f"Accept-Language: {BROWSER_HEADERS['Accept-Language']}",
+        "-H", f"Sec-Ch-Ua: {BROWSER_HEADERS['Sec-Ch-Ua']}",
+        "-H", f"Sec-Ch-Ua-Platform: {BROWSER_HEADERS['Sec-Ch-Ua-Platform']}",
+        "-H", "Sec-Fetch-Dest: document",
+        "-H", "Sec-Fetch-Mode: navigate",
+        "-H", "Sec-Fetch-Site: none",
+        "-H", "Sec-Fetch-User: ?1",
+        "-H", "Upgrade-Insecure-Requests: 1",
+        "--max-time", "15",
         url
     ]
     try:
@@ -93,9 +110,8 @@ def fetch_socialblade_html(url):
         html = result.stdout
         if '<script id="__NEXT_DATA__"' in html:
             return html
-        elif 'Cloudflare' in html or 'Just a moment...' in html:
-            print("[Warning] SocialBlade request was intercepted by Cloudflare challenge. "
-                  "Install curl_cffi (`pip install curl_cffi`) for automated TLS bypass.", file=sys.stderr)
+        elif "Cloudflare" in html or "Just a moment..." in html:
+            print("[Warning] SocialBlade request was intercepted by Cloudflare challenge.", file=sys.stderr)
             return None
         return html
     except Exception as e:
@@ -104,82 +120,130 @@ def fetch_socialblade_html(url):
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)
-    conn.execute('PRAGMA journal_mode = WAL;')
-    conn.execute('PRAGMA synchronous = NORMAL;')
+    conn.execute("PRAGMA journal_mode = WAL;")
+    conn.execute("PRAGMA synchronous = NORMAL;")
     
-    # 1. Existing cache table (for 24-hour TTL checks)
-    conn.execute('''
+    conn.execute("""
         CREATE TABLE IF NOT EXISTS metrics_cache (
             channel_id TEXT PRIMARY KEY,
-            data JSON,
-            updated_at INTEGER
+            data JSON NOT NULL,
+            updated_at TEXT NOT NULL
         )
-    ''')
+    """)
     
-    # 2. Permanent append-only multi-platform time-series table
-    conn.execute('''
+    conn.execute("""
         CREATE TABLE IF NOT EXISTS historical_metrics (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             platform TEXT NOT NULL,
             entity_id TEXT NOT NULL,
             data JSON NOT NULL,
-            extracted_at INTEGER NOT NULL
+            extracted_at TEXT NOT NULL
         )
-    ''')
+    """)
     
-    # Compound index for fast time-series lookups across platforms & entities
-    conn.execute('''
+    conn.execute("""
         CREATE INDEX IF NOT EXISTS idx_historical_platform_entity_extracted
         ON historical_metrics (platform, entity_id, extracted_at DESC)
-    ''')
+    """)
     
     conn.commit()
     return conn
 
-def get_cached_data(conn, channel_id):
+def get_cached_data(conn, channel_id: str):
     cursor = conn.cursor()
-    cursor.execute('SELECT data, updated_at FROM metrics_cache WHERE channel_id = ?', (channel_id,))
+    cursor.execute(
+        "SELECT data, updated_at FROM metrics_cache WHERE channel_id = ?",
+        (channel_id,),
+    )
     row = cursor.fetchone()
     if row:
-        data, updated_at = row
-        if time.time() - updated_at < TTL_SECONDS:
-            return json.loads(data)
+        data_raw, updated_at_str = row
+        try:
+            cached_dt = datetime.fromisoformat(updated_at_str)
+            if cached_dt.tzinfo is None:
+                cached_dt = cached_dt.replace(tzinfo=timezone.utc)
+            age_seconds = (datetime.now(timezone.utc) - cached_dt).total_seconds()
+        except (ValueError, TypeError):
+            try:
+                age_seconds = time.time() - float(updated_at_str)
+            except Exception:
+                return None
+
+        if age_seconds < TTL_SECONDS:
+            return json.loads(data_raw)
     return None
 
-def save_to_cache(conn, channel_id, data):
+def save_to_cache(conn, channel_id: str, data: dict):
+    now_iso = datetime.now(timezone.utc).isoformat()
     cursor = conn.cursor()
-    now_ts = int(time.time())
-    data_json = json.dumps(data)
 
-    # Execute both operations atomically in a single transaction
     with conn:
-        # Action A: Upsert into 24-hr TTL metrics_cache table
-        cursor.execute('''
+        # Step 1: Look up previous snapshot
+        cursor.execute(
+            "SELECT data FROM metrics_cache WHERE channel_id = ?",
+            (channel_id,),
+        )
+        row = cursor.fetchone()
+        prev_data = json.loads(row[0]) if row and row[0] else None
+
+        # Step 2: Compute deltas across tracked numeric metrics
+        deltas = {}
+        has_changes = False
+
+        if prev_data is None:
+            has_changes = True
+            for key in TRACKED_METRIC_KEYS:
+                val = data.get(key)
+                deltas[f"delta_{key}"] = int(val) if isinstance(val, (int, float)) else 0
+        else:
+            for key in TRACKED_METRIC_KEYS:
+                new_val = data.get(key)
+                old_val = prev_data.get(key)
+
+                new_int = int(new_val) if isinstance(new_val, (int, float)) else 0
+                old_int = int(old_val) if isinstance(old_val, (int, float)) else 0
+
+                delta = new_int - old_int
+                deltas[f"delta_{key}"] = delta
+
+                if delta != 0:
+                    has_changes = True
+
+        # Step 3: Always update current state and reset 24-hr TTL
+        cursor.execute("""
             INSERT INTO metrics_cache (channel_id, data, updated_at)
             VALUES (?, ?, ?)
             ON CONFLICT(channel_id) DO UPDATE SET
                 data = excluded.data,
                 updated_at = excluded.updated_at
-        ''', (channel_id, data_json, now_ts))
+        """, (channel_id, json.dumps(data), now_iso))
 
-        # Action B: Append new snapshot into historical_metrics table
-        cursor.execute('''
-            INSERT INTO historical_metrics (platform, entity_id, data, extracted_at)
-            VALUES (?, ?, ?, ?)
-        ''', ('youtube', channel_id, data_json, now_ts))
+        # Step 4: Conditionally append to historical log
+        if has_changes:
+            historical_payload = {
+                **data,
+                "deltas": deltas,
+            }
+            cursor.execute("""
+                INSERT INTO historical_metrics (platform, entity_id, data, extracted_at)
+                VALUES (?, ?, ?, ?)
+            """, ("youtube", channel_id, json.dumps(historical_payload), now_iso))
+            print(f"[Storage] Changes detected. Appended historical snapshot for {channel_id}.", file=sys.stderr)
+        else:
+            print(f"[Storage] Deduplication active: 0 changes detected across all tracked metrics. Skipped historical append for {channel_id}.", file=sys.stderr)
 
 def parse_num(val_str):
     if not val_str:
         return None
-    cleaned = str(val_str).replace(',', '').replace('+', '').replace('$', '').strip()
+    cleaned = str(val_str).replace(",", "").replace("+", "").replace("$", "").strip()
     multiplier = 1
-    if cleaned.endswith(('K', 'k')):
+    if cleaned.endswith(("K", "k")):
         multiplier = 1_000
         cleaned = cleaned[:-1]
-    elif cleaned.endswith(('M', 'm')):
+    elif cleaned.endswith(("M", "m")):
         multiplier = 1_000_000
         cleaned = cleaned[:-1]
-    elif cleaned.endswith(('B', 'b')):
+    elif cleaned.endswith(("B", "b")):
         multiplier = 1_000_000_000
         cleaned = cleaned[:-1]
     try:
@@ -188,10 +252,6 @@ def parse_num(val_str):
         return None
 
 def calculate_earnings(views):
-    """
-    Calculates SocialBlade standard estimated earnings based on
-    $0.25 (low) to $4.00 (high) CPM per 1,000 views.
-    """
     if views is None or views <= 0:
         return 0, 0
     low = int(round(views * 0.00025))
@@ -231,16 +291,15 @@ def fetch_socialblade_metrics(channel_id):
 
     try:
         next_data = json.loads(match.group(1))
-        queries = next_data.get('props', {}).get('pageProps', {}).get('trpcState', {}).get('json', {}).get('queries', [])
+        queries = next_data.get("props", {}).get("pageProps", {}).get("trpcState", {}).get("json", {}).get("queries", [])
         
         for q in queries:
-            q_key = q.get('queryKey', [])
+            q_key = q.get("queryKey", [])
             if not q_key:
                 continue
 
-            # User Profile: [["youtube", "user"], ...]
             if q_key[0] == ["youtube", "user"]:
-                u = q.get('state', {}).get('data') or {}
+                u = q.get("state", {}).get("data") or {}
                 metrics["sb_grade"] = u.get("grade")
                 metrics["sb_created_at"] = u.get("createdAt")
                 
@@ -251,9 +310,8 @@ def fetch_socialblade_metrics(channel_id):
                 metrics["sb_country_rank"] = ranks.get("country")
                 metrics["sb_category_rank"] = ranks.get("category")
 
-            # History Data Table: [["youtube", "history"], ...]
             elif q_key[0] == ["youtube", "history"]:
-                history_data = q.get('state', {}).get('data') or []
+                history_data = q.get("state", {}).get("data") or []
                 clean_history = []
                 
                 for idx, row in enumerate(history_data):
@@ -272,7 +330,6 @@ def fetch_socialblade_metrics(channel_id):
                         prev_subs = prev.get("subscribers")
                         prev_vids = prev.get("videos")
 
-                        # Carryover / unpolled day check: identical views, subs, and vids
                         if views == prev_views and subs == prev_subs and vids == prev_vids:
                             is_active_sample = False
                             views_gained = None
@@ -295,7 +352,6 @@ def fetch_socialblade_metrics(channel_id):
 
                 metrics["sb_history"] = clean_history
 
-                # Compute exact 14-day metrics from the first and last snapshot in the window
                 if len(clean_history) >= 2:
                     h_first = clean_history[0]
                     h_last = clean_history[-1]
@@ -312,20 +368,17 @@ def fetch_socialblade_metrics(channel_id):
     except Exception as e:
         print(f"[Warning] Failed parsing SocialBlade JSON data: {e}", file=sys.stderr)
 
-    # Search for pre-rendered 30-day stats in HTML
-    m_30 = re.search(r'Last 30 Days[^\d+]*\+?([\d,]+)[KkMmBb]?[^\d+]*\+?([\d,]+)', html)
+    m_30 = re.search(r"Last 30 Days[^\d+]*\+?([\d,]+)[KkMmBb]?[^\d+]*\+?([\d,]+)", html)
     if m_30:
         metrics["sb_subscribers_last_30_days"] = parse_num(m_30.group(1))
         metrics["sb_views_last_30_days"] = parse_num(m_30.group(2))
 
-    # Normalized 30-day fallback from observed 14-day sample
     if metrics["sb_views_last_30_days"] is None and metrics["sb_views_last_14_days"] is not None:
         metrics["sb_views_last_30_days"] = int(round((metrics["sb_views_last_14_days"] / 14.0) * 30.0))
 
     if metrics["sb_subscribers_last_30_days"] is None and metrics["sb_subscribers_last_14_days"] is not None:
         metrics["sb_subscribers_last_30_days"] = metrics["sb_subscribers_last_14_days"]
 
-    # Earnings calculations based on 30-day view reference
     ref_views_monthly = metrics["sb_views_last_30_days"] or metrics["sb_views_last_14_days"] or 0
     low_mo, high_mo = calculate_earnings(ref_views_monthly)
     metrics["sb_monthly_earnings_min"] = low_mo
@@ -336,54 +389,51 @@ def fetch_socialblade_metrics(channel_id):
     return metrics
 
 def fetch_from_youtube_api(channel_id, api_key):
-    # Step 1: channels.list
     channels_url = (
         f"https://www.googleapis.com/youtube/v3/channels?"
         f"part=snippet,statistics,contentDetails&id={channel_id}&key={api_key}"
     )
     channel_data = fetch_json(channels_url)
-    if not channel_data.get('items'):
+    if not channel_data.get("items"):
         raise ValueError(f"Channel ID '{channel_id}' does not exist or has no public access on YouTube.")
 
-    item = channel_data['items'][0]
-    artist_name = item['snippet'].get('title', '')
-    stats = item.get('statistics', {})
+    item = channel_data["items"][0]
+    artist_name = item["snippet"].get("title", "")
+    stats = item.get("statistics", {})
     
-    subscribers = int(stats.get('subscriberCount', 0))
-    total_views = int(stats.get('viewCount', 0))
-    video_count = int(stats.get('videoCount', 0))
+    subscribers = int(stats.get("subscriberCount", 0))
+    total_views = int(stats.get("viewCount", 0))
+    video_count = int(stats.get("videoCount", 0))
     
-    related_playlists = item.get('contentDetails', {}).get('relatedPlaylists', {})
-    uploads_playlist_id = related_playlists.get('uploads')
+    related_playlists = item.get("contentDetails", {}).get("relatedPlaylists", {})
+    uploads_playlist_id = related_playlists.get("uploads")
 
     if not uploads_playlist_id:
         raise ValueError(f"Could not locate 'Uploads' playlist for channel '{channel_id}'.")
 
-    # Step 2: playlistItems.list
     playlist_url = (
         f"https://www.googleapis.com/youtube/v3/playlistItems?"
         f"part=contentDetails&playlistId={uploads_playlist_id}&maxResults=50&key={api_key}"
     )
     playlist_data = fetch_json(playlist_url)
-    video_ids = [v['contentDetails']['videoId'] for v in playlist_data.get('items', []) if 'contentDetails' in v]
+    video_ids = [v["contentDetails"]["videoId"] for v in playlist_data.get("items", []) if "contentDetails" in v]
 
-    # Step 3: videos.list
     recent_50_views = 0
     recent_50_likes = 0
     recent_50_comments = 0
 
     if video_ids:
-        video_ids_str = ','.join(video_ids)
+        video_ids_str = ",".join(video_ids)
         videos_url = (
             f"https://www.googleapis.com/youtube/v3/videos?"
             f"part=statistics&id={video_ids_str}&key={api_key}"
         )
         videos_data = fetch_json(videos_url)
-        for vid in videos_data.get('items', []):
-            vstats = vid.get('statistics', {})
-            recent_50_views += int(vstats.get('viewCount', 0))
-            recent_50_likes += int(vstats.get('likeCount', 0))
-            recent_50_comments += int(vstats.get('commentCount', 0))
+        for vid in videos_data.get("items", []):
+            vstats = vid.get("statistics", {})
+            recent_50_views += int(vstats.get("viewCount", 0))
+            recent_50_likes += int(vstats.get("likeCount", 0))
+            recent_50_comments += int(vstats.get("commentCount", 0))
 
     return {
         "artist_id": channel_id,
@@ -400,23 +450,9 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description="Extract quota-optimized YouTube API & SocialBlade engagement metrics."
     )
-    parser.add_argument(
-        'channel_pos',
-        nargs='?',
-        default=None,
-        help="Target YouTube Channel ID"
-    )
-    parser.add_argument(
-        '-c', '--channel-id', '--channel',
-        dest='channel_opt',
-        default=None,
-        help="Target YouTube Channel ID"
-    )
-    parser.add_argument(
-        '-r', '--refresh', '--force', '-f',
-        action='store_true',
-        help="Bypass 24-hour cache and perform fresh lookups."
-    )
+    parser.add_argument("channel_pos", nargs="?", default=None, help="Target YouTube Channel ID")
+    parser.add_argument("-c", "--channel-id", "--channel", dest="channel_opt", default=None, help="Target YouTube Channel ID")
+    parser.add_argument("-r", "--refresh", "--force", "-f", action="store_true", help="Bypass 24-hour cache.")
     return parser.parse_args()
 
 def main():
@@ -428,7 +464,7 @@ def main():
         print("Usage: python3 youtube_scraper.py <CHANNEL_ID> [--refresh]", file=sys.stderr)
         sys.exit(1)
 
-    api_key = os.environ.get('YOUTUBE_API_KEY')
+    api_key = os.environ.get("YOUTUBE_API_KEY")
     if not api_key or not api_key.strip():
         print("ERROR: Environment variable YOUTUBE_API_KEY is not set or is empty.", file=sys.stderr)
         print("Set it using: export YOUTUBE_API_KEY=\"your_key_here\" or prefix the command.", file=sys.stderr)
@@ -446,7 +482,6 @@ def main():
             sys.exit(1)
 
         sb_metrics = fetch_socialblade_metrics(channel_id)
-        
         data = {**yt_metrics, **sb_metrics}
         save_to_cache(conn, channel_id, data)
     else:
@@ -456,5 +491,5 @@ def main():
     print(json.dumps(data, indent=4))
     conn.close()
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
