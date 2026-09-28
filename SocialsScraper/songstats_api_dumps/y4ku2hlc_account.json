@@ -1,0 +1,540 @@
+{
+  "result": "success",
+  "message": "Data retrieved.",
+  "account": {
+    "id": 2250539,
+    "idUnique": "y4ku2hlc",
+    "type": "artist",
+    "name": "K.LAW",
+    "country": "Artist",
+    "countryCode": null,
+    "countryName": null,
+    "secondaryText": "Artist",
+    "primaryRole": "Artist",
+    "bio": "K.LAW is an  artist from Australia, South West Sydney. Realising his passion and love for music at such a young age, he always had a spark for creativity of his own artistry which he began to take seriously at the age of 17. Songwriting, Producing & Singing are just some of the perks K.LAW uses with his approach to music. Being majorly influenced by a combination of Pop, R&B, Soul from artists such as The Weeknd, Justin Bieber, Chris Brown & Bruno Mars.... all the way through to EDM & Trap. He wishes to push his diverse music approach in his craft.\n\nA proud mix of Filipino & Indigenous heritage, K.LAW started developing his skills through representing both cultures through singing & dancing. Has been performing since a young age and has been apart of some amazing events.\n\nK.LAW is releasing his new hit single \u201cHold on tight\u201d an R&B inspired sound from the likes of Leon Thomas & Craig David! This is the first of of many for 2026 and considers this not even the beginning of his music journey. Hopes for one day for the whole world to see.",
+    "imageUrl": "https://i.scdn.co/image/ab67616100005174c4ca3ba27acacb8528a6557a",
+    "largeImageUrl": "https://i.scdn.co/image/ab6761610000e5ebc4ca3ba27acacb8528a6557a",
+    "hasManagement": false,
+    "baseUrl": "/artist/y4ku2hlc/k-law",
+    "links": [
+      {
+        "link": "https://open.spotify.com/artist/3fNvLxWjqCfeHwBYtHmuGI",
+        "deepLink": "spotify://artist/3fNvLxWjqCfeHwBYtHmuGI",
+        "source": "spotify",
+        "alpha": false,
+        "id": 101631648,
+        "name": "K.LAW",
+        "imageUrl": "https://i.scdn.co/image/ab67616100005174c4ca3ba27acacb8528a6557a",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true
+      },
+      {
+        "link": "https://www.beatport.com/artist/k-law/1321334",
+        "deepLink": "",
+        "source": "beatport",
+        "alpha": false,
+        "id": 394102005,
+        "name": "K.LAW",
+        "imageUrl": "https://data.songstats.com/images/default-track.svg",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true
+      },
+      {
+        "link": "https://music.apple.com/us/artist/k-law/1582044478",
+        "deepLink": "music://music.apple.com/us/artist/k-law/1582044478",
+        "source": "apple_music",
+        "alpha": false,
+        "id": 191999154,
+        "name": "K.LAW",
+        "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/bb/a8/1a/bba81aaa-88db-3729-af58-5f00d274f816/pr_source.png/300x300bb.webp",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true
+      },
+      {
+        "link": "https://shazam.com/artist/k-law/1582044478",
+        "deepLink": "shazam://www.shazam.com/artist/k-law/1582044478",
+        "source": "shazam",
+        "alpha": false,
+        "id": 191999154,
+        "name": "K.LAW",
+        "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/bb/a8/1a/bba81aaa-88db-3729-af58-5f00d274f816/pr_source.png/300x300bb.webp",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true
+      },
+      {
+        "link": "https://deezer.com/us/artist/141780202",
+        "deepLink": "deezer://www.deezer.com/artist/141780202",
+        "source": "deezer",
+        "alpha": false,
+        "id": 191862703,
+        "name": "K.LAW",
+        "imageUrl": "https://e-cdn-images.dzcdn.net/images/artist/cac797638b6a6a91bd4585724f202dca/300x300-000000-80-0-0.jpg",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true
+      },
+      {
+        "link": "https://music.amazon.com/artists/B09C5KT4HN?ref=dm_ff_tracklists",
+        "deepLink": "amznmp3://artists/B09C5KT4HN",
+        "source": "amazon",
+        "alpha": false,
+        "id": 191863728,
+        "name": "K.LAW",
+        "imageUrl": "https://m.media-amazon.com/images/I/71pH2A6ZtnL._AA300.jpg",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true
+      },
+      {
+        "link": "https://listen.tidal.com/artist/27841116/",
+        "deepLink": "tidal://artist/27841116",
+        "source": "tidal",
+        "alpha": false,
+        "id": 191862159,
+        "name": "K.LAW",
+        "imageUrl": "https://data.songstats.com/images/default-track.svg",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true
+      },
+      {
+        "link": "https://soundcloud.com/klaw56679",
+        "deepLink": "soundcloud://users:klaw56679",
+        "source": "soundcloud",
+        "alpha": false,
+        "id": 238280571,
+        "name": "K.LAW",
+        "imageUrl": "https://a1.sndcdn.com/images/default_avatar_large.png",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": false,
+        "username": "@klaw56679"
+      },
+      {
+        "link": "https://youtube.com/channel/UCcEAG39g0tXOFJ0vbFT2Xrw",
+        "deepLink": "youtube://channel/UCcEAG39g0tXOFJ0vbFT2Xrw",
+        "source": "youtube",
+        "alpha": false,
+        "id": 193043838,
+        "name": "K. LAW",
+        "imageUrl": "https://data.songstats.com/images/default-track.svg",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true,
+        "username": "K. LAW"
+      },
+      {
+        "link": "https://www.instagram.com/k.law_music",
+        "deepLink": "instagram://user?username=k.law_music",
+        "source": "instagram",
+        "alpha": false,
+        "id": 191844726,
+        "name": "K Law",
+        "imageUrl": "https://cdn.songstats.com/creator/instagram/2828497183?Expires=1791763200&Signature=BJVKHVb5bApj6L9w5Bb~AAKaS68911DdePClV5ULuhpXeifuX11PzbYHTnqpWXPSpbIDS3UCjbdkK~PJsQiuNctASoom6JAvOr~By4FRRvvIfckUMBAYaJ9xZI3ANBtpJztYQzXNcjdNvoyfN6KLpy4wmO5Gr~CeVc-29RQYeXnuNoYkG48qeUdatOzj491~s2gzyM2Cu-OIVxfmAsnleglqNn~I7WmBfBJkjrzaJL4UF5lhUO7otKYgaIUBByN93f6r~i-BDVDttYJRcUbfs86oG9rlRHpP~2r0do4EyUJSTyoWWygBWr6qnBjiqqEG7JMCCgG2r7r7~4OVNe4COg__&Key-Pair-Id=K1E34TX95U2X7E",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true,
+        "username": "@k.law_music"
+      }
+    ],
+    "hidden": false,
+    "allLinks": [
+      {
+        "link": "https://open.spotify.com/artist/3fNvLxWjqCfeHwBYtHmuGI",
+        "deepLink": "spotify://artist/3fNvLxWjqCfeHwBYtHmuGI",
+        "source": "spotify",
+        "alpha": false,
+        "id": 101631648,
+        "name": "K.LAW",
+        "imageUrl": "https://i.scdn.co/image/ab67616100005174c4ca3ba27acacb8528a6557a",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true
+      },
+      {
+        "link": "https://www.beatport.com/artist/k-law/1321334",
+        "deepLink": "",
+        "source": "beatport",
+        "alpha": false,
+        "id": 394102005,
+        "name": "K.LAW",
+        "imageUrl": "https://data.songstats.com/images/default-track.svg",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true
+      },
+      {
+        "link": "https://music.apple.com/us/artist/k-law/1582044478",
+        "deepLink": "music://music.apple.com/us/artist/k-law/1582044478",
+        "source": "apple_music",
+        "alpha": false,
+        "id": 191999154,
+        "name": "K.LAW",
+        "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/bb/a8/1a/bba81aaa-88db-3729-af58-5f00d274f816/pr_source.png/300x300bb.webp",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true
+      },
+      {
+        "link": "https://shazam.com/artist/k-law/1582044478",
+        "deepLink": "shazam://www.shazam.com/artist/k-law/1582044478",
+        "source": "shazam",
+        "alpha": false,
+        "id": 191999154,
+        "name": "K.LAW",
+        "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/bb/a8/1a/bba81aaa-88db-3729-af58-5f00d274f816/pr_source.png/300x300bb.webp",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true
+      },
+      {
+        "link": "https://deezer.com/us/artist/141780202",
+        "deepLink": "deezer://www.deezer.com/artist/141780202",
+        "source": "deezer",
+        "alpha": false,
+        "id": 191862703,
+        "name": "K.LAW",
+        "imageUrl": "https://e-cdn-images.dzcdn.net/images/artist/cac797638b6a6a91bd4585724f202dca/300x300-000000-80-0-0.jpg",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true
+      },
+      {
+        "link": "https://music.amazon.com/artists/B09C5KT4HN?ref=dm_ff_tracklists",
+        "deepLink": "amznmp3://artists/B09C5KT4HN",
+        "source": "amazon",
+        "alpha": false,
+        "id": 191863728,
+        "name": "K.LAW",
+        "imageUrl": "https://m.media-amazon.com/images/I/71pH2A6ZtnL._AA300.jpg",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true
+      },
+      {
+        "link": "https://listen.tidal.com/artist/27841116/",
+        "deepLink": "tidal://artist/27841116",
+        "source": "tidal",
+        "alpha": false,
+        "id": 191862159,
+        "name": "K.LAW",
+        "imageUrl": "https://data.songstats.com/images/default-track.svg",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true
+      },
+      {
+        "link": "https://soundcloud.com/klaw56679",
+        "deepLink": "soundcloud://users:klaw56679",
+        "source": "soundcloud",
+        "alpha": false,
+        "id": 238280571,
+        "name": "K.LAW",
+        "imageUrl": "https://a1.sndcdn.com/images/default_avatar_large.png",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": false,
+        "username": "@klaw56679"
+      },
+      {
+        "link": "https://soundcloud.com/klaw107726",
+        "deepLink": "soundcloud://users:klaw107726",
+        "source": "soundcloud",
+        "alpha": false,
+        "id": 732038686,
+        "name": "K.LAW",
+        "imageUrl": "https://a1.sndcdn.com/images/default_avatar_large.png",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": false,
+        "username": "@klaw107726"
+      },
+      {
+        "link": "https://youtube.com/channel/UCcEAG39g0tXOFJ0vbFT2Xrw",
+        "deepLink": "youtube://channel/UCcEAG39g0tXOFJ0vbFT2Xrw",
+        "source": "youtube",
+        "alpha": false,
+        "id": 193043838,
+        "name": "K. LAW",
+        "imageUrl": "https://data.songstats.com/images/default-track.svg",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true,
+        "username": "K. LAW"
+      },
+      {
+        "link": "https://youtube.com/channel/UCXWwW_nwBaYq7PqOzx7oWAg",
+        "deepLink": "youtube://channel/UCXWwW_nwBaYq7PqOzx7oWAg",
+        "source": "youtube",
+        "alpha": false,
+        "id": 192943335,
+        "name": "K.LAW",
+        "imageUrl": "https://data.songstats.com/images/default-track.svg",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true,
+        "username": "K.LAW"
+      },
+      {
+        "link": "https://youtube.com/channel/UCLV_W8dKv5LavsT9T9uACiA",
+        "deepLink": "youtube://channel/UCLV_W8dKv5LavsT9T9uACiA",
+        "source": "youtube",
+        "alpha": false,
+        "id": 1099637642,
+        "name": "K.LAW",
+        "imageUrl": "https://data.songstats.com/images/default-track.svg",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true,
+        "username": "K.LAW"
+      },
+      {
+        "link": "https://www.instagram.com/k.law_music",
+        "deepLink": "instagram://user?username=k.law_music",
+        "source": "instagram",
+        "alpha": false,
+        "id": 191844726,
+        "name": "K Law",
+        "imageUrl": "https://cdn.songstats.com/creator/instagram/2828497183?Expires=1791763200&Signature=BJVKHVb5bApj6L9w5Bb~AAKaS68911DdePClV5ULuhpXeifuX11PzbYHTnqpWXPSpbIDS3UCjbdkK~PJsQiuNctASoom6JAvOr~By4FRRvvIfckUMBAYaJ9xZI3ANBtpJztYQzXNcjdNvoyfN6KLpy4wmO5Gr~CeVc-29RQYeXnuNoYkG48qeUdatOzj491~s2gzyM2Cu-OIVxfmAsnleglqNn~I7WmBfBJkjrzaJL4UF5lhUO7otKYgaIUBByN93f6r~i-BDVDttYJRcUbfs86oG9rlRHpP~2r0do4EyUJSTyoWWygBWr6qnBjiqqEG7JMCCgG2r7r7~4OVNe4COg__&Key-Pair-Id=K1E34TX95U2X7E",
+        "verified": null,
+        "followerCount": null,
+        "isConnectable": true,
+        "username": "@k.law_music"
+      }
+    ],
+    "subbedAt": null,
+    "tier": 4,
+    "managementType": null,
+    "managementId": null,
+    "searchSimilarityScore": null,
+    "paymentId": null,
+    "canExport": false,
+    "platform": null,
+    "isPerformer": true,
+    "pendingLinkRequests": [],
+    "productTypeInfo": null,
+    "managedUPayableType": "UArtist",
+    "managedUPayableId": 2250539,
+    "primaryUCreator": {
+      "baseUrl": "/creator/3lrj8tap/k-law"
+    },
+    "primarySongstatsProfile": null,
+    "catalogImportSourceIds": [],
+    "profileSettings": {
+      "activities": {
+        "tier": 4,
+        "activitySettings": {
+          "activityTimeFilter": null,
+          "onlyEditorialFilter": null,
+          "noMilestoneFilter": null,
+          "noAlbumChartFilter": null,
+          "noCommentFilter": null
+        }
+      },
+      "notifications": {
+        "notificationSettings": [
+          {
+            "sourceId": "spotify",
+            "isNotificationOn": false
+          },
+          {
+            "sourceId": "radio",
+            "isNotificationOn": false
+          },
+          {
+            "sourceId": "apple_music",
+            "isNotificationOn": false
+          },
+          {
+            "sourceId": "amazon",
+            "isNotificationOn": false
+          },
+          {
+            "sourceId": "anghami",
+            "isNotificationOn": false
+          },
+          {
+            "sourceId": "deezer",
+            "isNotificationOn": false
+          },
+          {
+            "sourceId": "instagram",
+            "isNotificationOn": false
+          },
+          {
+            "sourceId": "tiktok",
+            "isNotificationOn": false
+          },
+          {
+            "sourceId": "youtube",
+            "isNotificationOn": false
+          },
+          {
+            "sourceId": "shazam",
+            "isNotificationOn": false
+          },
+          {
+            "sourceId": "tracklist",
+            "isNotificationOn": false
+          },
+          {
+            "sourceId": "beatport",
+            "isNotificationOn": false
+          },
+          {
+            "sourceId": "traxsource",
+            "isNotificationOn": false
+          },
+          {
+            "sourceId": "itunes",
+            "isNotificationOn": false
+          },
+          {
+            "sourceId": "tidal",
+            "isNotificationOn": false
+          },
+          {
+            "sourceId": "soundcloud",
+            "isNotificationOn": false
+          },
+          {
+            "sourceId": "facebook",
+            "isNotificationOn": false
+          }
+        ]
+      },
+      "integrations": {
+        "links": [
+          {
+            "link": "https://open.spotify.com/artist/3fNvLxWjqCfeHwBYtHmuGI",
+            "deepLink": "spotify://artist/3fNvLxWjqCfeHwBYtHmuGI",
+            "source": "spotify",
+            "alpha": false,
+            "id": 101631648,
+            "name": "K.LAW",
+            "imageUrl": "https://i.scdn.co/image/ab67616100005174c4ca3ba27acacb8528a6557a",
+            "verified": null,
+            "followerCount": null,
+            "isConnectable": true
+          },
+          {
+            "link": "https://www.beatport.com/artist/k-law/1321334",
+            "deepLink": "",
+            "source": "beatport",
+            "alpha": false,
+            "id": 394102005,
+            "name": "K.LAW",
+            "imageUrl": "https://data.songstats.com/images/default-track.svg",
+            "verified": null,
+            "followerCount": null,
+            "isConnectable": true
+          },
+          {
+            "link": "https://music.apple.com/us/artist/k-law/1582044478",
+            "deepLink": "music://music.apple.com/us/artist/k-law/1582044478",
+            "source": "apple_music",
+            "alpha": false,
+            "id": 191999154,
+            "name": "K.LAW",
+            "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/bb/a8/1a/bba81aaa-88db-3729-af58-5f00d274f816/pr_source.png/300x300bb.webp",
+            "verified": null,
+            "followerCount": null,
+            "isConnectable": true
+          },
+          {
+            "link": "https://shazam.com/artist/k-law/1582044478",
+            "deepLink": "shazam://www.shazam.com/artist/k-law/1582044478",
+            "source": "shazam",
+            "alpha": false,
+            "id": 191999154,
+            "name": "K.LAW",
+            "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/bb/a8/1a/bba81aaa-88db-3729-af58-5f00d274f816/pr_source.png/300x300bb.webp",
+            "verified": null,
+            "followerCount": null,
+            "isConnectable": true
+          },
+          {
+            "link": "https://deezer.com/us/artist/141780202",
+            "deepLink": "deezer://www.deezer.com/artist/141780202",
+            "source": "deezer",
+            "alpha": false,
+            "id": 191862703,
+            "name": "K.LAW",
+            "imageUrl": "https://e-cdn-images.dzcdn.net/images/artist/cac797638b6a6a91bd4585724f202dca/300x300-000000-80-0-0.jpg",
+            "verified": null,
+            "followerCount": null,
+            "isConnectable": true
+          },
+          {
+            "link": "https://music.amazon.com/artists/B09C5KT4HN?ref=dm_ff_tracklists",
+            "deepLink": "amznmp3://artists/B09C5KT4HN",
+            "source": "amazon",
+            "alpha": false,
+            "id": 191863728,
+            "name": "K.LAW",
+            "imageUrl": "https://m.media-amazon.com/images/I/71pH2A6ZtnL._AA300.jpg",
+            "verified": null,
+            "followerCount": null,
+            "isConnectable": true
+          },
+          {
+            "link": "https://listen.tidal.com/artist/27841116/",
+            "deepLink": "tidal://artist/27841116",
+            "source": "tidal",
+            "alpha": false,
+            "id": 191862159,
+            "name": "K.LAW",
+            "imageUrl": "https://data.songstats.com/images/default-track.svg",
+            "verified": null,
+            "followerCount": null,
+            "isConnectable": true
+          },
+          {
+            "link": "https://soundcloud.com/klaw56679",
+            "deepLink": "soundcloud://users:klaw56679",
+            "source": "soundcloud",
+            "alpha": false,
+            "id": 238280571,
+            "name": "K.LAW",
+            "imageUrl": "https://a1.sndcdn.com/images/default_avatar_large.png",
+            "verified": null,
+            "followerCount": null,
+            "isConnectable": false,
+            "username": "@klaw56679"
+          },
+          {
+            "link": "https://youtube.com/channel/UCcEAG39g0tXOFJ0vbFT2Xrw",
+            "deepLink": "youtube://channel/UCcEAG39g0tXOFJ0vbFT2Xrw",
+            "source": "youtube",
+            "alpha": false,
+            "id": 193043838,
+            "name": "K. LAW",
+            "imageUrl": "https://data.songstats.com/images/default-track.svg",
+            "verified": null,
+            "followerCount": null,
+            "isConnectable": true,
+            "username": "K. LAW"
+          },
+          {
+            "link": "https://www.instagram.com/k.law_music",
+            "deepLink": "instagram://user?username=k.law_music",
+            "source": "instagram",
+            "alpha": false,
+            "id": 191844726,
+            "name": "K Law",
+            "imageUrl": "https://cdn.songstats.com/creator/instagram/2828497183?Expires=1791763200&Signature=BJVKHVb5bApj6L9w5Bb~AAKaS68911DdePClV5ULuhpXeifuX11PzbYHTnqpWXPSpbIDS3UCjbdkK~PJsQiuNctASoom6JAvOr~By4FRRvvIfckUMBAYaJ9xZI3ANBtpJztYQzXNcjdNvoyfN6KLpy4wmO5Gr~CeVc-29RQYeXnuNoYkG48qeUdatOzj491~s2gzyM2Cu-OIVxfmAsnleglqNn~I7WmBfBJkjrzaJL4UF5lhUO7otKYgaIUBByN93f6r~i-BDVDttYJRcUbfs86oG9rlRHpP~2r0do4EyUJSTyoWWygBWr6qnBjiqqEG7JMCCgG2r7r7~4OVNe4COg__&Key-Pair-Id=K1E34TX95U2X7E",
+            "verified": null,
+            "followerCount": null,
+            "isConnectable": true,
+            "username": "@k.law_music"
+          }
+        ],
+        "pendingLinkRequests": []
+      }
+    }
+  }
+}

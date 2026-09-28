@@ -1,0 +1,317 @@
+{
+  "result": "success",
+  "message": "Data Retrieved.",
+  "chart": null,
+  "overviewInfo": {
+    "entityLinks": [
+      {
+        "name": "Collaborators:",
+        "data": [
+          {
+            "text": "Joshua Kalaw",
+            "to": "/artist/w0dmhe4c/joshua-kalaw",
+            "idUnique": "w0dmhe4c",
+            "imageUrl": null,
+            "popupType": "u_artist",
+            "popupIdUnique": "w0dmhe4c",
+            "popupStyle": "artist"
+          },
+          {
+            "text": "Barry Saleh",
+            "to": "/artist/y0aut9jc/barry-saleh",
+            "idUnique": "y0aut9jc",
+            "imageUrl": "https://cdn.songstats.com/creator/instagram/7950380029?Expires=1791763200&Signature=fUNd~c5D3hSsdMpt8PpxqVABSDqxvkQqjLOOQF9TmEpGweAVgPHlavGmsA05zuy8FaYdyPD~F3QkhJsAgNeM0C0uGjALAny8RbT0Sg3grIB1Jj4OUqnIYcJcb25eOOueZR13doqAku5t5wiqPSkvnp1KpJX4sWFh8Zugd9MVLQrSebgIJKYWw4pmBPCiB0foIW~woZzxuqQYBFjZWBlYd883NFBFYycWWvKAx-Wo6b3TvTqRD3QnwPb99YKdm~grnF9j0uDwNTzlowe80~yK~HZ9nnoYMkyeIMHdXutr5vfpQ85L9uiMNysi1ojxgcFojy4NE2FpmVdTY9~CcLMHaQ__&Key-Pair-Id=K1E34TX95U2X7E",
+            "popupType": "u_artist",
+            "popupIdUnique": "y0aut9jc",
+            "popupStyle": "artist"
+          },
+          {
+            "text": "beatswithsheph",
+            "to": "/artist/jrsivlqp/beatswithsheph",
+            "idUnique": "jrsivlqp",
+            "imageUrl": "https://cdn.songstats.com/creator/instagram/28349669979?Expires=1791763200&Signature=kjiXMPWVrTDyCGByX9mKW64G8VuCTm10plAJrdOk0ZpLud3~fVLiWOco5rXq2rfGiGZA8sKZ2ckI1wSkrxinT4WyebBn-nJ26iLXl1vrlneYXCa1PfxngXZmugCMH4KBew1iGzGdArkSqWUjSyO~ekI-Uz0iEWL3ZhP4vApU8PTDJMG8NkxGwHXasHinLpIvjVy9quYeesMXlAuBGIH~37PtgbgnKjJjc7jeFMrFj9v6gC22stzG0rT~WE1~6ig6-ahwbPyxawlvEife2Od7Rf350UMUoE2GGe7Fe1A2JtMpWZ3vBMN5ZjGpnoHeTMayQQzo731AaUA9V01Lgh5Sug__&Key-Pair-Id=K1E34TX95U2X7E",
+            "popupType": "u_artist",
+            "popupIdUnique": "jrsivlqp",
+            "popupStyle": "artist"
+          },
+          {
+            "text": "\u00c9tienne",
+            "to": "/artist/e9vk7pn2/etienne",
+            "idUnique": "e9vk7pn2",
+            "imageUrl": "https://cdn.songstats.com/creator/instagram/3419997084?Expires=1791763200&Signature=weC9pSixf92RPqceRbYvwnDAj6OJzmpt9g-RcKeZuxJt129Ge-QU~XBXkbTLAqVq3dE0LjCcnKLCUU-EkSY~DdsfurPjynQqy0iT2pVQMfzXRMkEL~tc6ldIRpabE2iYTEXa-iEKwwAbm6YcKHXQMk~eam6EMv59YF72vOnZzmJbBKkBZzwaTiBmPyurx5RbfD0-TQSUe8Wli640WRDOlt17hcSLD0AXVrmgRwLLJRJBd4ckg~tlAy1RF33FhofMYK3mGL0iWb6Dp8CeExSnQAUDBEZxWDIsqQRv4p2pFP6lj~TqlTc3cSXHBp1spnJbRmpIQ77oATKF-hpDnaj8xg__&Key-Pair-Id=K1E34TX95U2X7E",
+            "popupType": "u_artist",
+            "popupIdUnique": "e9vk7pn2",
+            "popupStyle": "artist"
+          },
+          {
+            "text": "Aayan Ahmed",
+            "to": "/artist/3bhrkwxq/aayan-ahmed",
+            "idUnique": "3bhrkwxq",
+            "imageUrl": null,
+            "popupType": "u_artist",
+            "popupIdUnique": "3bhrkwxq",
+            "popupStyle": "artist"
+          }
+        ]
+      }
+    ],
+    "infoArray": [],
+    "audioFeatureData": {
+      "polarData": {
+        "titleText": "Audio Features",
+        "subtitleText": "Average",
+        "categories": [
+          "Acousticness",
+          "Danceability",
+          "Energy",
+          "Instrumentalness",
+          "Liveness",
+          "Speechiness",
+          "Valence",
+          "Loudness"
+        ],
+        "tooltip": "The average audio analysis by Spotify across your catalog.",
+        "data": [
+          27,
+          65,
+          62,
+          1,
+          13,
+          7,
+          55,
+          88
+        ],
+        "tooltipValues": [
+          "27%",
+          "65%",
+          "62%",
+          "1%",
+          "13%",
+          "7%",
+          "55%",
+          "-7 dB"
+        ],
+        "color": "#E7234B",
+        "secondaryColor": "#E7234B"
+      },
+      "summaryItems": [
+        {
+          "key": "duration",
+          "value": "02:51",
+          "name": "Duration",
+          "displayValue": "02:51",
+          "isSummary": true
+        },
+        {
+          "key": "key",
+          "value": "E",
+          "name": "Key",
+          "displayValue": "E",
+          "isSummary": true
+        },
+        {
+          "key": "tempo",
+          "value": "125.653",
+          "name": "Tempo",
+          "displayValue": "125.653 BPM",
+          "isSummary": true
+        },
+        {
+          "key": "time_signature",
+          "value": "4.0",
+          "name": "Time Signature",
+          "displayValue": "4.0/4",
+          "isSummary": true
+        }
+      ]
+    },
+    "genres": [
+      "Pop",
+      "R&B",
+      "R&B/Soul",
+      "Indie Pop",
+      "House"
+    ],
+    "stats": [
+      {
+        "name": "Followers",
+        "statType": "followers_total",
+        "sourceIds": [
+          "spotify",
+          "deezer",
+          "instagram",
+          "youtube"
+        ],
+        "value": "3321",
+        "graphPopupData": {
+          "graphDataId": "account-overview-stat-followers_total",
+          "source": "overview",
+          "popupStyle": "pie"
+        }
+      },
+      {
+        "name": "Streams",
+        "statType": "streams_total",
+        "sourceIds": [
+          "spotify",
+          "youtube",
+          "soundcloud"
+        ],
+        "value": "263K",
+        "graphPopupData": {
+          "graphDataId": "account-overview-stat-streams_total",
+          "source": "overview",
+          "popupStyle": "pie"
+        }
+      },
+      {
+        "name": "Playlists",
+        "statType": "playlists_total",
+        "sourceIds": [
+          "spotify",
+          "apple_music",
+          "tidal"
+        ],
+        "value": "73",
+        "graphPopupData": {
+          "graphDataId": "account-overview-stat-playlists_total",
+          "source": "overview",
+          "popupStyle": "pie"
+        }
+      },
+      {
+        "name": "Playlist Reach",
+        "statType": "playlist_reach_total",
+        "sourceIds": [
+          "spotify",
+          "tidal"
+        ],
+        "value": "3.72M",
+        "graphPopupData": {
+          "graphDataId": "account-overview-stat-playlist_reach_total",
+          "source": "overview",
+          "popupStyle": "pie"
+        }
+      },
+      {
+        "name": "Charts",
+        "statType": "charts_total",
+        "sourceIds": [
+          "beatport",
+          "itunes"
+        ],
+        "value": "2",
+        "graphPopupData": {
+          "graphDataId": "account-overview-stat-charts_total",
+          "source": "overview",
+          "popupStyle": "pie"
+        }
+      },
+      {
+        "name": "Shazams",
+        "statType": "shazams_total",
+        "sourceIds": [
+          "shazam"
+        ],
+        "value": "322",
+        "graphPopupData": null
+      },
+      {
+        "name": "Videos",
+        "statType": "videos_total",
+        "sourceIds": [
+          "instagram",
+          "tiktok",
+          "youtube"
+        ],
+        "value": "98",
+        "graphPopupData": {
+          "graphDataId": "account-overview-stat-videos_total",
+          "source": "overview",
+          "popupStyle": "pie"
+        }
+      },
+      {
+        "name": "Views",
+        "statType": "views_total",
+        "sourceIds": [
+          "instagram",
+          "tiktok",
+          "youtube"
+        ],
+        "value": "367K",
+        "graphPopupData": {
+          "graphDataId": "account-overview-stat-views_total",
+          "source": "overview",
+          "popupStyle": "pie"
+        }
+      },
+      {
+        "name": "DJ Supports",
+        "statType": "dj_supports_total",
+        "sourceIds": [],
+        "value": "0",
+        "graphPopupData": null
+      }
+    ],
+    "followerBreakdown": {
+      "titleText": "Follower Breakdown",
+      "secondaryTitleText": "Followers",
+      "subtitleText": "All Time",
+      "tooltip": "Your follower / subscriber distribution by platform.",
+      "categories": [
+        "<img src='/files/source-icons/spotify.webp' style='vertical-align: middle; width: 20px; height: 20px'/>",
+        "<img src='/files/source-icons/deezer.webp' style='vertical-align: middle; width: 20px; height: 20px'/>",
+        "<img src='/files/source-icons/instagram.webp' style='vertical-align: middle; width: 20px; height: 20px'/>",
+        "<img src='/files/source-icons/youtube.webp' style='vertical-align: middle; width: 20px; height: 20px'/>"
+      ],
+      "data": [
+        {
+          "name": "Spotify",
+          "y": 205,
+          "color": "#1ED760",
+          "sourceId": "spotify",
+          "sourceIcon": "<img src='https://songstats.com/files/source-icons/spotify.webp' alt='spotify' style='vertical-align: middle; width: 20px; height: 20px'/>"
+        },
+        {
+          "name": "Deezer",
+          "y": 1,
+          "color": "#A238FF",
+          "sourceId": "deezer",
+          "sourceIcon": "<img src='https://songstats.com/files/source-icons/deezer.webp' alt='deezer' style='vertical-align: middle; width: 20px; height: 20px'/>"
+        },
+        {
+          "name": "Instagram",
+          "y": 2911,
+          "color": "#fbac50",
+          "sourceId": "instagram",
+          "sourceIcon": "<img src='https://songstats.com/files/source-icons/instagram.webp' alt='instagram' style='vertical-align: middle; width: 20px; height: 20px'/>"
+        },
+        {
+          "name": "YouTube",
+          "y": 204,
+          "color": "#FF0033",
+          "sourceId": "youtube",
+          "sourceIcon": "<img src='https://songstats.com/files/source-icons/youtube.webp' alt='youtube' style='vertical-align: middle; width: 20px; height: 20px'/>"
+        }
+      ],
+      "popupStyle": "pie"
+    },
+    "tooltips": [
+      {
+        "title": "Collaborators:",
+        "tooltip": "The primary collaborators that have worked with this performing artist."
+      },
+      {
+        "title": "Links:",
+        "tooltip": "References to the external data sources for this artist."
+      },
+      {
+        "title": "Genres:",
+        "tooltip": "Primary music styles associated with this artist."
+      }
+    ]
+  },
+  "sourceId": "overview",
+  "accountIdUnique": "y4ku2hlc"
+}

@@ -1,0 +1,2424 @@
+{
+  "result": "success",
+  "message": "Data Retrieved.",
+  "hasAccess": false,
+  "sourceId": "overview",
+  "accountIdUnique": "y4ku2hlc",
+  "tabId": "insights",
+  "tabData": {
+    "relatedNetwork": {
+      "relationshipType": "referring_artists",
+      "sourceId": "all",
+      "relationshipStatus": "current",
+      "items": [
+        {
+          "text": "Nick Marcus",
+          "to": "/artist/twmozjli/nick-marcus",
+          "idUnique": "twmozjli",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051743dbbb932cd47c85416e2efa6",
+          "popupType": "u_artist",
+          "popupIdUnique": "twmozjli",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 5953
+        },
+        {
+          "text": "Kevin Allure",
+          "to": "/artist/mejtf5wg/kevin-allure",
+          "idUnique": "mejtf5wg",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051743c444cc0668dd3f8a8e6bde8",
+          "popupType": "u_artist",
+          "popupIdUnique": "mejtf5wg",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 5382
+        },
+        {
+          "text": "acoya",
+          "to": "/artist/3w1euhrf/acoya",
+          "idUnique": "3w1euhrf",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051749a93aed60319443439ce75f5",
+          "popupType": "u_artist",
+          "popupIdUnique": "3w1euhrf",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 5365
+        },
+        {
+          "text": "Aryan Jolly",
+          "to": "/artist/7mip6utg/aryan-jolly",
+          "idUnique": "7mip6utg",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174b44583baeeb9de0b3ea84cbe",
+          "popupType": "u_artist",
+          "popupIdUnique": "7mip6utg",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 4511
+        },
+        {
+          "text": "Giuliano Solis",
+          "to": "/artist/zp307wq6/giuliano-solis",
+          "idUnique": "zp307wq6",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051744ebbad1974e6f5cca412f3f9",
+          "popupType": "u_artist",
+          "popupIdUnique": "zp307wq6",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 4316
+        },
+        {
+          "text": "Ezra loau",
+          "to": "/artist/b4slngwz/ezra-loau",
+          "idUnique": "b4slngwz",
+          "imageUrl": "https://i.scdn.co/image/ab6761610000517481370f0a476a57332656f871",
+          "popupType": "u_artist",
+          "popupIdUnique": "b4slngwz",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 3886
+        },
+        {
+          "text": "N i c o",
+          "to": "/artist/saiopf0g/n-i-c-o",
+          "idUnique": "saiopf0g",
+          "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages211/v4/11/d5/3a/11d53a22-374b-46f0-8106-ea1a6c226511/1fb65b95-d3df-4613-a450-ecf84c3ed963_file_cropped.png/300x300bb.webp",
+          "popupType": "u_artist",
+          "popupIdUnique": "saiopf0g",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 3162
+        },
+        {
+          "text": "Molham",
+          "to": "/artist/aqtg9upe/molham",
+          "idUnique": "aqtg9upe",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174d3ab9b389709c6413d1957e4",
+          "popupType": "u_artist",
+          "popupIdUnique": "aqtg9upe",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 3038
+        },
+        {
+          "text": "Allira",
+          "to": "/artist/7yf9euw1/allira",
+          "idUnique": "7yf9euw1",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174adea5eb5e6ec0255c6b15b17",
+          "popupType": "u_artist",
+          "popupIdUnique": "7yf9euw1",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 2765
+        },
+        {
+          "text": "Takumii",
+          "to": "/artist/m7dkiosn/takumii",
+          "idUnique": "m7dkiosn",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174fb5f3374436fc4eaa998462a",
+          "popupType": "u_artist",
+          "popupIdUnique": "m7dkiosn",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 2670
+        },
+        {
+          "text": "John Thornton",
+          "to": "/artist/j0uq9ago/john-thornton",
+          "idUnique": "j0uq9ago",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174f810adb464e26886d22fa95f",
+          "popupType": "u_artist",
+          "popupIdUnique": "j0uq9ago",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 2471
+        },
+        {
+          "text": "Waydee",
+          "to": "/artist/caf5qt7y/waydee",
+          "idUnique": "caf5qt7y",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174da63de39fabc090daf55bec9",
+          "popupType": "u_artist",
+          "popupIdUnique": "caf5qt7y",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 2405
+        },
+        {
+          "text": "tina$he",
+          "to": "/artist/ajmuscrn/tina-he",
+          "idUnique": "ajmuscrn",
+          "imageUrl": "https://i.scdn.co/image/ab6761610000517422533a70356867f02eabc0e9",
+          "popupType": "u_artist",
+          "popupIdUnique": "ajmuscrn",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 2284
+        },
+        {
+          "text": "Josh Wood",
+          "to": "/artist/doft73g4/josh-wood",
+          "idUnique": "doft73g4",
+          "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732feabc214abb209bf411d17f",
+          "popupType": "u_artist",
+          "popupIdUnique": "doft73g4",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 2153
+        },
+        {
+          "text": "Sharon-Rose",
+          "to": "/artist/ys3ex14m/sharon-rose",
+          "idUnique": "ys3ex14m",
+          "imageUrl": "https://i.scdn.co/image/ab6761610000517405c1be280ad9ac405b5ef680",
+          "popupType": "u_artist",
+          "popupIdUnique": "ys3ex14m",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 2089
+        },
+        {
+          "text": "Oso",
+          "to": "/artist/vsjurp41/oso",
+          "idUnique": "vsjurp41",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174b4db82662d7b3c1cc35beaa2",
+          "popupType": "u_artist",
+          "popupIdUnique": "vsjurp41",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 1761
+        },
+        {
+          "text": "Robby Gallan",
+          "to": "/artist/qla5dw2m/robby-gallan",
+          "idUnique": "qla5dw2m",
+          "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730b00256b8500a9435c614362",
+          "popupType": "u_artist",
+          "popupIdUnique": "qla5dw2m",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 1374
+        },
+        {
+          "text": "Sandro Keyz",
+          "to": "/artist/esi54r32/sandro-keyz",
+          "idUnique": "esi54r32",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051748bd5d0d1a7ad9ab04b7da87d",
+          "popupType": "u_artist",
+          "popupIdUnique": "esi54r32",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 1210
+        },
+        {
+          "text": "C.Z.B",
+          "to": "/artist/gb803qde/c-z-b",
+          "idUnique": "gb803qde",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174f530e9c741925acd29dfc283",
+          "popupType": "u_artist",
+          "popupIdUnique": "gb803qde",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 1176
+        },
+        {
+          "text": "Clinny P",
+          "to": "/artist/j5bqdvpz/clinny-p",
+          "idUnique": "j5bqdvpz",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051748c740bab993111c10fccbe6b",
+          "popupType": "u_artist",
+          "popupIdUnique": "j5bqdvpz",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 1139
+        },
+        {
+          "text": "Isthatleo",
+          "to": "/artist/g7a6r5hi/isthatleo",
+          "idUnique": "g7a6r5hi",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051748db20b4c912b649c5f13b610",
+          "popupType": "u_artist",
+          "popupIdUnique": "g7a6r5hi",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 1047
+        },
+        {
+          "text": "Ritzo",
+          "to": "/artist/bwmlr3hf/ritzo",
+          "idUnique": "bwmlr3hf",
+          "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736232bf107f6758954a5d8314",
+          "popupType": "u_artist",
+          "popupIdUnique": "bwmlr3hf",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 696
+        },
+        {
+          "text": "AMORI",
+          "to": "/artist/jui4ayx1/amori",
+          "idUnique": "jui4ayx1",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174d61e745d3ad117622eac34d2",
+          "popupType": "u_artist",
+          "popupIdUnique": "jui4ayx1",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 641
+        },
+        {
+          "text": "Cameron Jones",
+          "to": "/artist/norsjbh4/cameron-jones",
+          "idUnique": "norsjbh4",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051741a58c58bd8cfb6a87e4ef8ff",
+          "popupType": "u_artist",
+          "popupIdUnique": "norsjbh4",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 568
+        },
+        {
+          "text": "Milo Maestro",
+          "to": "/artist/usx9qt2m/milo-maestro",
+          "idUnique": "usx9qt2m",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174e033aa498fdf2db0a766fa7b",
+          "popupType": "u_artist",
+          "popupIdUnique": "usx9qt2m",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 435
+        },
+        {
+          "text": "Adelante Music",
+          "to": "/artist/on48bz0k/adelante-music",
+          "idUnique": "on48bz0k",
+          "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages221/v4/72/50/32/72503250-a150-14e5-39ea-907684575b17/e6005a3a-e058-437b-89b0-b5855b8847a6_ami-identity-347ad89254db68f2eb9e360567624683-2024-09-05T17-25-12.216Z_cropped.png/300x300bb.webp",
+          "popupType": "u_artist",
+          "popupIdUnique": "on48bz0k",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 429
+        },
+        {
+          "text": "Azi Storm",
+          "to": "/artist/fy5h2o4n/azi-storm",
+          "idUnique": "fy5h2o4n",
+          "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ae/94/fd/ae94fda4-465b-f27e-71a4-73f13608d338/pr_source.png/300x300bb.webp",
+          "popupType": "u_artist",
+          "popupIdUnique": "fy5h2o4n",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 256
+        },
+        {
+          "text": "Daniel Rowlen",
+          "to": "/artist/75a68riq/daniel-rowlen",
+          "idUnique": "75a68riq",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174c50fccc32f7fcbdb5393203e",
+          "popupType": "u_artist",
+          "popupIdUnique": "75a68riq",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 219
+        },
+        {
+          "text": "Shelana Azora",
+          "to": "/artist/6uh05qpw/shelana-azora",
+          "idUnique": "6uh05qpw",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174a84a4179815e5298cef0b2ca",
+          "popupType": "u_artist",
+          "popupIdUnique": "6uh05qpw",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 154
+        },
+        {
+          "text": "Unharithly",
+          "to": "/artist/wtbk7js4/unharithly",
+          "idUnique": "wtbk7js4",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051741740861f98f7909003a7e136",
+          "popupType": "u_artist",
+          "popupIdUnique": "wtbk7js4",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 153
+        },
+        {
+          "text": "Kings Blood",
+          "to": "/artist/b5ulacz1/kings-blood",
+          "idUnique": "b5ulacz1",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051749257743ff5315ec54d096c40",
+          "popupType": "u_artist",
+          "popupIdUnique": "b5ulacz1",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 129
+        },
+        {
+          "text": "MJ King",
+          "to": "/artist/jeq17zyx/mj-king",
+          "idUnique": "jeq17zyx",
+          "imageUrl": "https://i.scdn.co/image/ab6761610000517474681b08db17b4d84fa85e07",
+          "popupType": "u_artist",
+          "popupIdUnique": "jeq17zyx",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 122
+        },
+        {
+          "text": "Stevie Bankster",
+          "to": "/artist/7j8lvhfm/stevie-bankster",
+          "idUnique": "7j8lvhfm",
+          "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages211/v4/03/b2/69/03b26967-83be-841d-7550-8ecf3ebb749f/ami-identity-716d3d6338d6eedbaf0fca2b4a3e8b58-2024-10-21T00-40-44.812Z_cropped.png/300x300bb.webp",
+          "popupType": "u_artist",
+          "popupIdUnique": "7j8lvhfm",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 93
+        }
+      ],
+      "availableSourceIds": [
+        "spotify",
+        "apple_music",
+        "deezer",
+        "youtube",
+        "tidal"
+      ],
+      "availableRelationshipTypes": [
+        "referring_artists",
+        "related_artists",
+        "related_labels"
+      ],
+      "availableRelationshipStatuses": [
+        "current",
+        "previous",
+        "all"
+      ]
+    },
+    "highlightItems": [
+      {
+        "id": 21911963,
+        "trackName": "Nebula",
+        "artistName": "K.LAW",
+        "labelName": null,
+        "uArtistIds": null,
+        "uLabelIds": null,
+        "uTrackReleaseDate": "2025-11-26",
+        "idUnique": "2ujhryx6",
+        "avatarFullpath": "https://i.scdn.co/image/ab67616d00001e0283debb6d0d562f2b123fc087",
+        "date": "2025-12-02",
+        "subjectData": {
+          "message": "583K Followers"
+        },
+        "trackData": [
+          {
+            "id": 1,
+            "count": "",
+            "message": ""
+          },
+          {
+            "id": 2,
+            "count": "",
+            "message": "Playlist"
+          }
+        ],
+        "actionDescriptorText": "Playlisted on ",
+        "actionSubjectText": "top hits 2000-2026",
+        "secondaryDescriptorText": "by ",
+        "secondarySubjectText": "oldskool",
+        "hasChartPosition": null,
+        "useSecondaryFeedActionIcon": false,
+        "customFeedActionIconName": "playlist",
+        "notificationText": "Playlisted by oldskool on top hits 2000-2026 (583K Followers)",
+        "twitterSharePath": null,
+        "source": "spotify",
+        "isRadiostatsOnly": false,
+        "baseUrl": "/track/2ujhryx6/nebula",
+        "canvasUrl": null,
+        "mediaType": null,
+        "screenwork": null,
+        "externalUrl": "http://open.spotify.com/playlist/7E3uEa1emOcbZJuB8sFXeK",
+        "largeAvatarFullpath": "https://i.scdn.co/image/ab67616d0000b27383debb6d0d562f2b123fc087",
+        "secondaryAvatarFullpath": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84204c28bea315890d359083d7",
+        "shareDescriptorText": "Listen now on ",
+        "shareSubjectText": "top hits 2000-2026",
+        "isArtistStyle": null,
+        "rank": "6.97",
+        "tier": 1,
+        "commentText": "\"Nebula\" got added to 'top hits 2000-2026' with over 583K Followers on Spotify!",
+        "isMilestone": null,
+        "storyIdentifier": "SpotifyPlaylistsTrack-765730490",
+        "isAlbum": false,
+        "activityType": "playlist",
+        "activityNotificationId": "SpotifyPlaylistsTrack-765730490",
+        "popupIdUnique": "7E3uEa1emOcbZJuB8sFXeK",
+        "popupType": "spotify_playlist",
+        "popupStyle": "playlist_detail",
+        "isHighlight": false,
+        "hasViewedAsStory": false,
+        "isEntityActivity": false,
+        "routeDescription": "See track analytics",
+        "analyticsTrackTableId": "spotify_playlists",
+        "artists": [
+          {
+            "name": "K.LAW",
+            "songstatsArtistId": "y4ku2hlc"
+          }
+        ],
+        "title": null,
+        "creatorName": null,
+        "secondaryCreatorName": null,
+        "originalPostDate": null,
+        "uCreatorId": null
+      },
+      {
+        "id": 34897684,
+        "trackName": "Move On",
+        "artistName": "K.LAW",
+        "labelName": null,
+        "uArtistIds": null,
+        "uLabelIds": null,
+        "uTrackReleaseDate": "2026-07-23",
+        "idUnique": "fapvrz4k",
+        "avatarFullpath": "https://i.scdn.co/image/ab67616d00001e02bb2ab45fa2679cbd6c3ef427",
+        "date": "2026-08-03",
+        "subjectData": {},
+        "trackData": [
+          {
+            "id": 1,
+            "count": "",
+            "message": ""
+          },
+          {
+            "id": 2,
+            "count": "",
+            "message": "Editorial Playlist"
+          }
+        ],
+        "actionDescriptorText": "Playlisted on ",
+        "actionSubjectText": "triple j Unearthed Best New Music",
+        "secondaryDescriptorText": "by ",
+        "secondarySubjectText": "Unknown",
+        "hasChartPosition": null,
+        "useSecondaryFeedActionIcon": false,
+        "customFeedActionIconName": "playlist",
+        "notificationText": "Playlisted by Unknown on triple j Unearthed Best New Music",
+        "twitterSharePath": null,
+        "source": "apple_music",
+        "isRadiostatsOnly": false,
+        "baseUrl": "/track/fapvrz4k/move-on",
+        "canvasUrl": null,
+        "mediaType": null,
+        "screenwork": null,
+        "externalUrl": "https://music.apple.com/us/playlist/triple-j-unearthed-best-new-music/pl.61d41a78c1de4a85a786320f0f338af7",
+        "largeAvatarFullpath": "https://i.scdn.co/image/ab67616d0000b273bb2ab45fa2679cbd6c3ef427",
+        "secondaryAvatarFullpath": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/59/ae/30/59ae3098-dc84-d9c8-1888-58f99dc15508/b3324b26-695e-4610-974a-d52b1c436948.png/120x120SC.DN01.webp",
+        "shareDescriptorText": "Listen now on ",
+        "shareSubjectText": "triple j Unearthed Best New Music",
+        "isArtistStyle": null,
+        "rank": "6.0",
+        "tier": 1,
+        "commentText": "\"Move On\" was added to the editorial playlist 'triple j Unearthed Best New Music' on Apple Music!",
+        "isMilestone": null,
+        "storyIdentifier": "AppleMusicPlaylistsTrack-10637238235-57710",
+        "isAlbum": false,
+        "activityType": "editorial_playlist",
+        "activityNotificationId": "AppleMusicPlaylistsTrack-10637238235-57710",
+        "popupIdUnique": "pl.61d41a78c1de4a85a786320f0f338af7",
+        "popupType": "apple_music_playlist",
+        "popupStyle": "playlist_detail",
+        "isHighlight": false,
+        "hasViewedAsStory": false,
+        "isEntityActivity": false,
+        "routeDescription": "See track analytics",
+        "analyticsTrackTableId": "apple_playlists",
+        "artists": [
+          {
+            "name": "K.LAW",
+            "songstatsArtistId": "y4ku2hlc"
+          }
+        ],
+        "title": null,
+        "creatorName": null,
+        "secondaryCreatorName": null,
+        "originalPostDate": null,
+        "uCreatorId": null
+      },
+      {
+        "id": 34806731,
+        "trackName": "Hold on Tight",
+        "artistName": "K.LAW",
+        "labelName": null,
+        "uArtistIds": null,
+        "uLabelIds": null,
+        "uTrackReleaseDate": "2026-03-04",
+        "idUnique": "4hxkfrda",
+        "avatarFullpath": "https://i.scdn.co/image/ab67616d00001e021147503ae73a8568259bec7a",
+        "date": "2026-09-08",
+        "subjectData": {
+          "message": "Canberra, Australia"
+        },
+        "trackData": [
+          {
+            "id": 1,
+            "count": "",
+            "message": ""
+          },
+          {
+            "id": 2,
+            "count": "",
+            "message": "Airplay Radio"
+          }
+        ],
+        "actionDescriptorText": "Played on",
+        "actionSubjectText": "ABC triple j Unearthed",
+        "secondaryDescriptorText": null,
+        "secondarySubjectText": null,
+        "hasChartPosition": null,
+        "useSecondaryFeedActionIcon": false,
+        "customFeedActionIconName": "radio",
+        "notificationText": "Played on ABC triple j Unearthed in Canberra, Australia",
+        "twitterSharePath": null,
+        "source": "radio",
+        "isRadiostatsOnly": true,
+        "baseUrl": "/track/4hxkfrda/hold-on-tight",
+        "canvasUrl": null,
+        "mediaType": null,
+        "screenwork": null,
+        "externalUrl": null,
+        "largeAvatarFullpath": "https://i.scdn.co/image/ab67616d0000b2731147503ae73a8568259bec7a",
+        "secondaryAvatarFullpath": null,
+        "shareDescriptorText": "Played on",
+        "shareSubjectText": "ABC triple j Unearthed",
+        "isArtistStyle": null,
+        "rank": "0.0",
+        "tier": 1,
+        "commentText": "\"Hold on Tight\" was played on ABC triple j Unearthed in Canberra, Australia!",
+        "isMilestone": null,
+        "storyIdentifier": "RadioStationTrack-10822495079",
+        "isAlbum": null,
+        "activityType": "radio",
+        "activityNotificationId": "RadioStationTrack-10822495079",
+        "popupIdUnique": null,
+        "popupType": null,
+        "popupStyle": null,
+        "isHighlight": false,
+        "hasViewedAsStory": false,
+        "isEntityActivity": false,
+        "routeDescription": "See track analytics",
+        "analyticsTrackTableId": "radio_stations",
+        "artists": [
+          {
+            "name": "K.LAW",
+            "songstatsArtistId": "y4ku2hlc"
+          }
+        ],
+        "title": null,
+        "creatorName": null,
+        "secondaryCreatorName": null,
+        "originalPostDate": null,
+        "uCreatorId": null
+      },
+      {
+        "id": 27368873,
+        "trackName": "Charcoal",
+        "artistName": "K.LAW, Am \u00c9lie",
+        "labelName": null,
+        "uArtistIds": null,
+        "uLabelIds": null,
+        "uTrackReleaseDate": "2026-02-20",
+        "idUnique": "swqmpeio",
+        "avatarFullpath": "https://i.scdn.co/image/ab67616d00001e027d7775725de402e2fe7b8407",
+        "date": "2026-06-13",
+        "subjectData": {
+          "message": "91.1K Subscribers",
+          "comment": "\u2764\u2764\u2764\u2764\u2764wow Ellie \u2764\ufe0f\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f, you nailed it \u2764"
+        },
+        "trackData": [
+          {
+            "id": 1,
+            "count": "",
+            "message": ""
+          },
+          {
+            "id": 2,
+            "count": "",
+            "message": "Comment"
+          }
+        ],
+        "actionDescriptorText": "New Comment by",
+        "actionSubjectText": "T.D.F Edits",
+        "secondaryDescriptorText": null,
+        "secondarySubjectText": null,
+        "hasChartPosition": null,
+        "useSecondaryFeedActionIcon": false,
+        "customFeedActionIconName": "comments",
+        "notificationText": "New Comment by T.D.F Edits (91.1K Subscribers)",
+        "twitterSharePath": null,
+        "source": "youtube",
+        "isRadiostatsOnly": false,
+        "baseUrl": "/track/swqmpeio/charcoal",
+        "canvasUrl": null,
+        "mediaType": null,
+        "screenwork": null,
+        "externalUrl": "https://www.youtube.com/watch?v=mpY3euNm99E&lc=UgwunXZkOh1iyOI408N4AaABAg",
+        "largeAvatarFullpath": "https://i.scdn.co/image/ab67616d0000b2737d7775725de402e2fe7b8407",
+        "secondaryAvatarFullpath": "https://yt3.ggpht.com/xK0wjt2zZa2jJg2mUX8RnrgjjwWDC1qenAnje181byMd72o7X1fC2eDA7pHURbRbiWzQkCZDgQ=s240-c-k-c0x00ffffff-no-rj",
+        "shareDescriptorText": "New Comment by",
+        "shareSubjectText": "T.D.F Edits",
+        "isArtistStyle": null,
+        "rank": "1.93",
+        "tier": 2,
+        "commentText": "T.D.F Edits just commented on \"Charcoal\"!",
+        "isMilestone": null,
+        "storyIdentifier": "YoutubeComment-2652052645",
+        "isAlbum": null,
+        "activityType": "comment",
+        "activityNotificationId": "YoutubeComment-2652052645",
+        "popupIdUnique": "UCG2wJys6Z7FIVtEe2tgF4aw",
+        "popupType": "youtube_source_creator",
+        "popupStyle": "creator_comments",
+        "isHighlight": false,
+        "hasViewedAsStory": false,
+        "isEntityActivity": false,
+        "routeDescription": "See track analytics",
+        "analyticsTrackTableId": "youtube_comments",
+        "artists": [
+          {
+            "name": "K.LAW",
+            "songstatsArtistId": "y4ku2hlc"
+          },
+          {
+            "name": "Am \u00c9lie",
+            "songstatsArtistId": "96q7eo0d"
+          }
+        ],
+        "title": null,
+        "creatorName": null,
+        "secondaryCreatorName": null,
+        "originalPostDate": null,
+        "uCreatorId": null
+      },
+      {
+        "id": 27368873,
+        "trackName": "Charcoal",
+        "artistName": "K.LAW, Am \u00c9lie",
+        "labelName": null,
+        "uArtistIds": null,
+        "uLabelIds": null,
+        "uTrackReleaseDate": "2026-02-20",
+        "idUnique": "swqmpeio",
+        "avatarFullpath": "https://i.scdn.co/image/ab67616d00001e027d7775725de402e2fe7b8407",
+        "date": "2026-06-05",
+        "subjectData": {
+          "message": "15.1K Followers"
+        },
+        "trackData": [
+          {
+            "id": 1,
+            "count": "",
+            "message": ""
+          },
+          {
+            "id": 2,
+            "count": "",
+            "message": "Video"
+          }
+        ],
+        "actionDescriptorText": "New video by",
+        "actionSubjectText": "Am E\u0301lie",
+        "secondaryDescriptorText": null,
+        "secondarySubjectText": null,
+        "hasChartPosition": null,
+        "useSecondaryFeedActionIcon": true,
+        "customFeedActionIconName": null,
+        "notificationText": "New video by Am E\u0301lie (15.1K Followers)",
+        "twitterSharePath": null,
+        "source": "instagram",
+        "isRadiostatsOnly": false,
+        "baseUrl": "/track/swqmpeio/charcoal",
+        "canvasUrl": null,
+        "mediaType": null,
+        "screenwork": null,
+        "externalUrl": "https://www.instagram.com/p/DWgNQFYkRz-/",
+        "largeAvatarFullpath": "https://i.scdn.co/image/ab67616d0000b2737d7775725de402e2fe7b8407",
+        "secondaryAvatarFullpath": "https://cdn.songstats.com/creator/instagram/44558361778?v=1789889000&Expires=1791763200&Signature=aIMwQ5FpLLTeCkPHSz8jGpPiivQblQJNp~qvEjJEwLLIiHnWuuFODrHDlnJzp9LF~pRlJmP7AfGOsqUW8EZrCZqiFFyiziLuwX8oSlq~EnGjNPbdDftHy-iOyQpjEsjNq0zSlongPVekQ-nSxDugGDTN2gZdWA9L1qvyOFSF27EhoU37vG46YrZi3RHH1Er67DmP51ibrEnL~CWpxpxIL8sPr5fDcL5WU7JP1vdAvV~qHrJlntcwRzU1wuQFnnHTqjyNq9HluhRJuCvnJ~TMZ~k34XWWk8UJgetRhPGRuHkq9QEhYnoncqx-~ZcOAvye4iuvB7SG9rSzmtuebMLg-A__&Key-Pair-Id=K1E34TX95U2X7E",
+        "shareDescriptorText": "New video by",
+        "shareSubjectText": "Am E\u0301lie",
+        "isArtistStyle": true,
+        "rank": "2.3",
+        "tier": 3,
+        "commentText": "\"Charcoal\" just got picked up by famous influencer Am E\u0301lie who has over 15.1K Followers on Instagram!",
+        "isMilestone": null,
+        "storyIdentifier": "InstagramPost-165496117",
+        "isAlbum": null,
+        "activityType": "video",
+        "activityNotificationId": "InstagramPost-165496117",
+        "popupIdUnique": "44558361778",
+        "popupType": "instagram_source_creator",
+        "popupStyle": "creator_detail",
+        "isHighlight": false,
+        "hasViewedAsStory": false,
+        "isEntityActivity": false,
+        "routeDescription": "See track analytics",
+        "analyticsTrackTableId": "instagram_videos",
+        "artists": [
+          {
+            "name": "K.LAW",
+            "songstatsArtistId": "y4ku2hlc"
+          },
+          {
+            "name": "Am \u00c9lie",
+            "songstatsArtistId": "96q7eo0d"
+          }
+        ],
+        "title": null,
+        "creatorName": null,
+        "secondaryCreatorName": null,
+        "originalPostDate": null,
+        "uCreatorId": null
+      },
+      {
+        "id": 19810185,
+        "trackName": "Promises",
+        "artistName": "K.LAW, \u00c9TIENNE, Klaw",
+        "labelName": null,
+        "uArtistIds": null,
+        "uLabelIds": null,
+        "uTrackReleaseDate": "2023-10-12",
+        "idUnique": "efjxau5t",
+        "avatarFullpath": "https://i.scdn.co/image/ab67616d00001e025074c09dac1e3f2371336413",
+        "date": "2026-04-24",
+        "subjectData": {
+          "message": "1208 Followers"
+        },
+        "trackData": [
+          {
+            "id": 1,
+            "count": "",
+            "message": ""
+          },
+          {
+            "id": 2,
+            "count": "",
+            "message": "Video"
+          }
+        ],
+        "actionDescriptorText": "New video by",
+        "actionSubjectText": "DJ Jaearle \ud83d\udc41\ud83d\ude48\ud83c\udfa7",
+        "secondaryDescriptorText": null,
+        "secondarySubjectText": null,
+        "hasChartPosition": null,
+        "useSecondaryFeedActionIcon": true,
+        "customFeedActionIconName": null,
+        "notificationText": "New video by DJ Jaearle \ud83d\udc41\ud83d\ude48\ud83c\udfa7 (1208 Followers)",
+        "twitterSharePath": null,
+        "source": "tiktok",
+        "isRadiostatsOnly": false,
+        "baseUrl": "/track/efjxau5t/promises",
+        "canvasUrl": null,
+        "mediaType": null,
+        "screenwork": null,
+        "externalUrl": "https://www.tiktok.com/@tiktok/video/7585678378464759062",
+        "largeAvatarFullpath": "https://i.scdn.co/image/ab67616d0000b2735074c09dac1e3f2371336413",
+        "secondaryAvatarFullpath": "https://p16-common.tiktokcdn.com/tos-maliva-avt-0068/cf027b8ab44ed5d1e53e63e26051e124~c5_300x300.webp",
+        "shareDescriptorText": "New video by",
+        "shareSubjectText": "DJ Jaearle \ud83d\udc41\ud83d\ude48\ud83c\udfa7",
+        "isArtistStyle": true,
+        "rank": "1.74",
+        "tier": 4,
+        "commentText": "\"Promises\" is going viral on TikTok! Check out the video by DJ Jaearle \ud83d\udc41\ud83d\ude48\ud83c\udfa7 who has over 1208 Followers: https://www.tiktok.com/@tiktok/video/7585678378464759062",
+        "isMilestone": null,
+        "storyIdentifier": "TiktokPost-3663613120",
+        "isAlbum": null,
+        "activityType": "video",
+        "activityNotificationId": "TiktokPost-3663613120",
+        "popupIdUnique": "7570376040959853590",
+        "popupType": "tiktok_source_creator",
+        "popupStyle": "creator_detail",
+        "isHighlight": false,
+        "hasViewedAsStory": false,
+        "isEntityActivity": false,
+        "routeDescription": "See track analytics",
+        "analyticsTrackTableId": "tiktok_videos",
+        "artists": [
+          {
+            "name": "K.LAW",
+            "songstatsArtistId": "y4ku2hlc"
+          },
+          {
+            "name": "\u00c9TIENNE",
+            "songstatsArtistId": "mjdnkuvr"
+          }
+        ],
+        "title": null,
+        "creatorName": null,
+        "secondaryCreatorName": null,
+        "originalPostDate": null,
+        "uCreatorId": null
+      }
+    ],
+    "relatedTracks": [
+      {
+        "headerText": "Recent Releases",
+        "relatedTracks": [
+          {
+            "id": 34897684,
+            "idUnique": "fapvrz4k",
+            "trackName": "Move On",
+            "artistName": "K.LAW",
+            "baseUrl": "/track/fapvrz4k/move-on",
+            "imageUrl": "https://i.scdn.co/image/ab67616d00001e02bb2ab45fa2679cbd6c3ef427",
+            "releaseDate": "2026-07-23"
+          },
+          {
+            "id": 34806731,
+            "idUnique": "4hxkfrda",
+            "trackName": "Hold on Tight",
+            "artistName": "K.LAW",
+            "baseUrl": "/track/4hxkfrda/hold-on-tight",
+            "imageUrl": "https://i.scdn.co/image/ab67616d00001e021147503ae73a8568259bec7a",
+            "releaseDate": "2026-03-04"
+          },
+          {
+            "id": 27368873,
+            "idUnique": "swqmpeio",
+            "trackName": "Charcoal",
+            "artistName": "Am \u00c9lie, K.LAW",
+            "baseUrl": "/track/swqmpeio/charcoal",
+            "imageUrl": "https://i.scdn.co/image/ab67616d00001e027d7775725de402e2fe7b8407",
+            "releaseDate": "2026-02-20"
+          },
+          {
+            "id": 21911963,
+            "idUnique": "2ujhryx6",
+            "trackName": "Nebula",
+            "artistName": "K.LAW",
+            "baseUrl": "/track/2ujhryx6/nebula",
+            "imageUrl": "https://i.scdn.co/image/ab67616d00001e0283debb6d0d562f2b123fc087",
+            "releaseDate": "2025-11-26"
+          },
+          {
+            "id": 20776833,
+            "idUnique": "w8hoeyau",
+            "trackName": "Q.U.E.E.N",
+            "artistName": "K.LAW",
+            "baseUrl": "/track/w8hoeyau/q-u-e-e-n",
+            "imageUrl": "https://i.scdn.co/image/ab67616d00001e02861732af136311a9888e4c27",
+            "releaseDate": "2025-09-11"
+          }
+        ]
+      }
+    ],
+    "listData": [
+      {
+        "headerText": "Top Performing Tracks",
+        "buttons": [
+          {
+            "title": "Popularity",
+            "rankType": "popularity_current",
+            "buttonId": "popularity_current",
+            "tooltip": "The top performing tracks ranked by current popularity."
+          },
+          {
+            "title": "Playlist Reach",
+            "rankType": "playlist_reach_current",
+            "buttonId": "playlist_reach_current",
+            "tooltip": "The top playlisted tracks ranked by current follower reach."
+          }
+        ],
+        "descriptors": [
+          {
+            "text": "Track",
+            "value": "Popularity (Current)"
+          }
+        ],
+        "items": [
+          [
+            {
+              "id": 34897684,
+              "idUnique": "fapvrz4k",
+              "popupIdUnique": "fapvrz4k",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Move On",
+              "trackName": "Move On",
+              "secondaryText": "K.LAW",
+              "artistName": "K.LAW",
+              "baseUrl": "/track/fapvrz4k/move-on",
+              "externalUrl": null,
+              "primaryValue": "16%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e02bb2ab45fa2679cbd6c3ef427",
+              "previewUrl": "https://p.scdn.co/mp3-preview/0170f4e7bc24fa2dc76076a9c0247b35a11699fe",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 20155607,
+              "idUnique": "jikpa7dz",
+              "popupIdUnique": "jikpa7dz",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Don't Let Me Down",
+              "trackName": "Don't Let Me Down",
+              "secondaryText": "K.LAW",
+              "artistName": "K.LAW",
+              "baseUrl": "/track/jikpa7dz/don-t-let-me-down",
+              "externalUrl": null,
+              "primaryValue": "10%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e021b1120bd32a82bf35a313918",
+              "previewUrl": "https://p.scdn.co/mp3-preview/290cfd0344a70efe9d1d055d9c474e48c9c47d89",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 27368873,
+              "idUnique": "swqmpeio",
+              "popupIdUnique": "swqmpeio",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Charcoal",
+              "trackName": "Charcoal",
+              "secondaryText": "Am \u00c9lie, K.LAW",
+              "artistName": "Am \u00c9lie, K.LAW",
+              "baseUrl": "/track/swqmpeio/charcoal",
+              "externalUrl": null,
+              "primaryValue": "4%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e027d7775725de402e2fe7b8407",
+              "previewUrl": "https://p.scdn.co/mp3-preview/44ab4aaee894988c81a7fbece61dedd0ff5eb115",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 34806731,
+              "idUnique": "4hxkfrda",
+              "popupIdUnique": "4hxkfrda",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Hold on Tight",
+              "trackName": "Hold on Tight",
+              "secondaryText": "K.LAW",
+              "artistName": "K.LAW",
+              "baseUrl": "/track/4hxkfrda/hold-on-tight",
+              "externalUrl": null,
+              "primaryValue": "4%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e021147503ae73a8568259bec7a",
+              "previewUrl": "https://p.scdn.co/mp3-preview/a174f7df08bedbae46acfc21e4afbe9f24c9c955",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 13744131,
+              "idUnique": "b92dwezv",
+              "popupIdUnique": "b92dwezv",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Betcha Didn't Know",
+              "trackName": "Betcha Didn't Know",
+              "secondaryText": "K.LAW",
+              "artistName": "K.LAW",
+              "baseUrl": "/track/b92dwezv/betcha-didn-t-know",
+              "externalUrl": null,
+              "primaryValue": "3%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e02b5a8056f5b95155be3bedb33",
+              "previewUrl": "https://p.scdn.co/mp3-preview/3afadeba9376bedefa1ababe1b2a8f4a03d4af76",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 13715387,
+              "idUnique": "hcxsmdb0",
+              "popupIdUnique": "hcxsmdb0",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Got You",
+              "trackName": "Got You",
+              "secondaryText": "K.LAW",
+              "artistName": "K.LAW",
+              "baseUrl": "/track/hcxsmdb0/got-you",
+              "externalUrl": null,
+              "primaryValue": "2%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e02d28151b527dcaa8cdc5c5732",
+              "previewUrl": "https://p.scdn.co/mp3-preview/17ce266d269360ce64e0756c88ef487d75076491",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 20776833,
+              "idUnique": "w8hoeyau",
+              "popupIdUnique": "w8hoeyau",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Q.U.E.E.N",
+              "trackName": "Q.U.E.E.N",
+              "secondaryText": "K.LAW",
+              "artistName": "K.LAW",
+              "baseUrl": "/track/w8hoeyau/q-u-e-e-n",
+              "externalUrl": null,
+              "primaryValue": "1%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e02861732af136311a9888e4c27",
+              "previewUrl": "https://p.scdn.co/mp3-preview/bcc9835ce368867732f3785ea6ab08d669b30376",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 21911963,
+              "idUnique": "2ujhryx6",
+              "popupIdUnique": "2ujhryx6",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Nebula",
+              "trackName": "Nebula",
+              "secondaryText": "K.LAW",
+              "artistName": "K.LAW",
+              "baseUrl": "/track/2ujhryx6/nebula",
+              "externalUrl": null,
+              "primaryValue": "1%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e0283debb6d0d562f2b123fc087",
+              "previewUrl": "https://p.scdn.co/mp3-preview/7488c90770cb3a9baedfdfaab76cae4d4b306d15",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 13715256,
+              "idUnique": "d7acjqnk",
+              "popupIdUnique": "d7acjqnk",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Your Name",
+              "trackName": "Your Name",
+              "secondaryText": "K.LAW, \u00c9TIENNE",
+              "artistName": "K.LAW, \u00c9TIENNE",
+              "baseUrl": "/track/d7acjqnk/your-name",
+              "externalUrl": null,
+              "primaryValue": "1%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e024e307140b24b84b249582884",
+              "previewUrl": "https://p.scdn.co/mp3-preview/f09a725b51faddd0d506b108e7afb7dd0efbce97",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 19810185,
+              "idUnique": "efjxau5t",
+              "popupIdUnique": "efjxau5t",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Promises",
+              "trackName": "Promises",
+              "secondaryText": "\u00c9TIENNE, K.LAW, Klaw",
+              "artistName": "\u00c9TIENNE, K.LAW, Klaw",
+              "baseUrl": "/track/efjxau5t/promises",
+              "externalUrl": null,
+              "primaryValue": "1%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e025074c09dac1e3f2371336413",
+              "previewUrl": "https://p.scdn.co/mp3-preview/11ae72df6a097a3841c1a5b94cabcd7d11fd436f",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "tabOptions": [
+    {
+      "id": "insights",
+      "text": "Insights"
+    },
+    {
+      "id": "events",
+      "text": "Events"
+    },
+    {
+      "id": "sync",
+      "text": "Syncs"
+    }
+  ],
+  "overviewInfo": {
+    "relatedNetwork": {
+      "relationshipType": "referring_artists",
+      "sourceId": "all",
+      "relationshipStatus": "current",
+      "items": [
+        {
+          "text": "Nick Marcus",
+          "to": "/artist/twmozjli/nick-marcus",
+          "idUnique": "twmozjli",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051743dbbb932cd47c85416e2efa6",
+          "popupType": "u_artist",
+          "popupIdUnique": "twmozjli",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 5953
+        },
+        {
+          "text": "Kevin Allure",
+          "to": "/artist/mejtf5wg/kevin-allure",
+          "idUnique": "mejtf5wg",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051743c444cc0668dd3f8a8e6bde8",
+          "popupType": "u_artist",
+          "popupIdUnique": "mejtf5wg",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 5382
+        },
+        {
+          "text": "acoya",
+          "to": "/artist/3w1euhrf/acoya",
+          "idUnique": "3w1euhrf",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051749a93aed60319443439ce75f5",
+          "popupType": "u_artist",
+          "popupIdUnique": "3w1euhrf",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 5365
+        },
+        {
+          "text": "Aryan Jolly",
+          "to": "/artist/7mip6utg/aryan-jolly",
+          "idUnique": "7mip6utg",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174b44583baeeb9de0b3ea84cbe",
+          "popupType": "u_artist",
+          "popupIdUnique": "7mip6utg",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 4511
+        },
+        {
+          "text": "Giuliano Solis",
+          "to": "/artist/zp307wq6/giuliano-solis",
+          "idUnique": "zp307wq6",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051744ebbad1974e6f5cca412f3f9",
+          "popupType": "u_artist",
+          "popupIdUnique": "zp307wq6",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 4316
+        },
+        {
+          "text": "Ezra loau",
+          "to": "/artist/b4slngwz/ezra-loau",
+          "idUnique": "b4slngwz",
+          "imageUrl": "https://i.scdn.co/image/ab6761610000517481370f0a476a57332656f871",
+          "popupType": "u_artist",
+          "popupIdUnique": "b4slngwz",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 3886
+        },
+        {
+          "text": "N i c o",
+          "to": "/artist/saiopf0g/n-i-c-o",
+          "idUnique": "saiopf0g",
+          "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages211/v4/11/d5/3a/11d53a22-374b-46f0-8106-ea1a6c226511/1fb65b95-d3df-4613-a450-ecf84c3ed963_file_cropped.png/300x300bb.webp",
+          "popupType": "u_artist",
+          "popupIdUnique": "saiopf0g",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 3162
+        },
+        {
+          "text": "Molham",
+          "to": "/artist/aqtg9upe/molham",
+          "idUnique": "aqtg9upe",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174d3ab9b389709c6413d1957e4",
+          "popupType": "u_artist",
+          "popupIdUnique": "aqtg9upe",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 3038
+        },
+        {
+          "text": "Allira",
+          "to": "/artist/7yf9euw1/allira",
+          "idUnique": "7yf9euw1",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174adea5eb5e6ec0255c6b15b17",
+          "popupType": "u_artist",
+          "popupIdUnique": "7yf9euw1",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 2765
+        },
+        {
+          "text": "Takumii",
+          "to": "/artist/m7dkiosn/takumii",
+          "idUnique": "m7dkiosn",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174fb5f3374436fc4eaa998462a",
+          "popupType": "u_artist",
+          "popupIdUnique": "m7dkiosn",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 2670
+        },
+        {
+          "text": "John Thornton",
+          "to": "/artist/j0uq9ago/john-thornton",
+          "idUnique": "j0uq9ago",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174f810adb464e26886d22fa95f",
+          "popupType": "u_artist",
+          "popupIdUnique": "j0uq9ago",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 2471
+        },
+        {
+          "text": "Waydee",
+          "to": "/artist/caf5qt7y/waydee",
+          "idUnique": "caf5qt7y",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174da63de39fabc090daf55bec9",
+          "popupType": "u_artist",
+          "popupIdUnique": "caf5qt7y",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 2405
+        },
+        {
+          "text": "tina$he",
+          "to": "/artist/ajmuscrn/tina-he",
+          "idUnique": "ajmuscrn",
+          "imageUrl": "https://i.scdn.co/image/ab6761610000517422533a70356867f02eabc0e9",
+          "popupType": "u_artist",
+          "popupIdUnique": "ajmuscrn",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 2284
+        },
+        {
+          "text": "Josh Wood",
+          "to": "/artist/doft73g4/josh-wood",
+          "idUnique": "doft73g4",
+          "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732feabc214abb209bf411d17f",
+          "popupType": "u_artist",
+          "popupIdUnique": "doft73g4",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 2153
+        },
+        {
+          "text": "Sharon-Rose",
+          "to": "/artist/ys3ex14m/sharon-rose",
+          "idUnique": "ys3ex14m",
+          "imageUrl": "https://i.scdn.co/image/ab6761610000517405c1be280ad9ac405b5ef680",
+          "popupType": "u_artist",
+          "popupIdUnique": "ys3ex14m",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 2089
+        },
+        {
+          "text": "Oso",
+          "to": "/artist/vsjurp41/oso",
+          "idUnique": "vsjurp41",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174b4db82662d7b3c1cc35beaa2",
+          "popupType": "u_artist",
+          "popupIdUnique": "vsjurp41",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 1761
+        },
+        {
+          "text": "Robby Gallan",
+          "to": "/artist/qla5dw2m/robby-gallan",
+          "idUnique": "qla5dw2m",
+          "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730b00256b8500a9435c614362",
+          "popupType": "u_artist",
+          "popupIdUnique": "qla5dw2m",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 1374
+        },
+        {
+          "text": "Sandro Keyz",
+          "to": "/artist/esi54r32/sandro-keyz",
+          "idUnique": "esi54r32",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051748bd5d0d1a7ad9ab04b7da87d",
+          "popupType": "u_artist",
+          "popupIdUnique": "esi54r32",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 1210
+        },
+        {
+          "text": "C.Z.B",
+          "to": "/artist/gb803qde/c-z-b",
+          "idUnique": "gb803qde",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174f530e9c741925acd29dfc283",
+          "popupType": "u_artist",
+          "popupIdUnique": "gb803qde",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 1176
+        },
+        {
+          "text": "Clinny P",
+          "to": "/artist/j5bqdvpz/clinny-p",
+          "idUnique": "j5bqdvpz",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051748c740bab993111c10fccbe6b",
+          "popupType": "u_artist",
+          "popupIdUnique": "j5bqdvpz",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 1139
+        },
+        {
+          "text": "Isthatleo",
+          "to": "/artist/g7a6r5hi/isthatleo",
+          "idUnique": "g7a6r5hi",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051748db20b4c912b649c5f13b610",
+          "popupType": "u_artist",
+          "popupIdUnique": "g7a6r5hi",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 1047
+        },
+        {
+          "text": "Ritzo",
+          "to": "/artist/bwmlr3hf/ritzo",
+          "idUnique": "bwmlr3hf",
+          "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736232bf107f6758954a5d8314",
+          "popupType": "u_artist",
+          "popupIdUnique": "bwmlr3hf",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 696
+        },
+        {
+          "text": "AMORI",
+          "to": "/artist/jui4ayx1/amori",
+          "idUnique": "jui4ayx1",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174d61e745d3ad117622eac34d2",
+          "popupType": "u_artist",
+          "popupIdUnique": "jui4ayx1",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 641
+        },
+        {
+          "text": "Cameron Jones",
+          "to": "/artist/norsjbh4/cameron-jones",
+          "idUnique": "norsjbh4",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051741a58c58bd8cfb6a87e4ef8ff",
+          "popupType": "u_artist",
+          "popupIdUnique": "norsjbh4",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 568
+        },
+        {
+          "text": "Milo Maestro",
+          "to": "/artist/usx9qt2m/milo-maestro",
+          "idUnique": "usx9qt2m",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174e033aa498fdf2db0a766fa7b",
+          "popupType": "u_artist",
+          "popupIdUnique": "usx9qt2m",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 435
+        },
+        {
+          "text": "Adelante Music",
+          "to": "/artist/on48bz0k/adelante-music",
+          "idUnique": "on48bz0k",
+          "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages221/v4/72/50/32/72503250-a150-14e5-39ea-907684575b17/e6005a3a-e058-437b-89b0-b5855b8847a6_ami-identity-347ad89254db68f2eb9e360567624683-2024-09-05T17-25-12.216Z_cropped.png/300x300bb.webp",
+          "popupType": "u_artist",
+          "popupIdUnique": "on48bz0k",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 429
+        },
+        {
+          "text": "Azi Storm",
+          "to": "/artist/fy5h2o4n/azi-storm",
+          "idUnique": "fy5h2o4n",
+          "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ae/94/fd/ae94fda4-465b-f27e-71a4-73f13608d338/pr_source.png/300x300bb.webp",
+          "popupType": "u_artist",
+          "popupIdUnique": "fy5h2o4n",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 256
+        },
+        {
+          "text": "Daniel Rowlen",
+          "to": "/artist/75a68riq/daniel-rowlen",
+          "idUnique": "75a68riq",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174c50fccc32f7fcbdb5393203e",
+          "popupType": "u_artist",
+          "popupIdUnique": "75a68riq",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 219
+        },
+        {
+          "text": "Shelana Azora",
+          "to": "/artist/6uh05qpw/shelana-azora",
+          "idUnique": "6uh05qpw",
+          "imageUrl": "https://i.scdn.co/image/ab67616100005174a84a4179815e5298cef0b2ca",
+          "popupType": "u_artist",
+          "popupIdUnique": "6uh05qpw",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 154
+        },
+        {
+          "text": "Unharithly",
+          "to": "/artist/wtbk7js4/unharithly",
+          "idUnique": "wtbk7js4",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051741740861f98f7909003a7e136",
+          "popupType": "u_artist",
+          "popupIdUnique": "wtbk7js4",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 153
+        },
+        {
+          "text": "Kings Blood",
+          "to": "/artist/b5ulacz1/kings-blood",
+          "idUnique": "b5ulacz1",
+          "imageUrl": "https://i.scdn.co/image/ab676161000051749257743ff5315ec54d096c40",
+          "popupType": "u_artist",
+          "popupIdUnique": "b5ulacz1",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 129
+        },
+        {
+          "text": "MJ King",
+          "to": "/artist/jeq17zyx/mj-king",
+          "idUnique": "jeq17zyx",
+          "imageUrl": "https://i.scdn.co/image/ab6761610000517474681b08db17b4d84fa85e07",
+          "popupType": "u_artist",
+          "popupIdUnique": "jeq17zyx",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 122
+        },
+        {
+          "text": "Stevie Bankster",
+          "to": "/artist/7j8lvhfm/stevie-bankster",
+          "idUnique": "7j8lvhfm",
+          "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages211/v4/03/b2/69/03b26967-83be-841d-7550-8ecf3ebb749f/ami-identity-716d3d6338d6eedbaf0fca2b4a3e8b58-2024-10-21T00-40-44.812Z_cropped.png/300x300bb.webp",
+          "popupType": "u_artist",
+          "popupIdUnique": "7j8lvhfm",
+          "popupStyle": "artist",
+          "sourceIds": [
+            "spotify"
+          ],
+          "monthlyListeners": 93
+        }
+      ],
+      "availableSourceIds": [
+        "spotify",
+        "apple_music",
+        "deezer",
+        "youtube",
+        "tidal"
+      ],
+      "availableRelationshipTypes": [
+        "referring_artists",
+        "related_artists",
+        "related_labels"
+      ],
+      "availableRelationshipStatuses": [
+        "current",
+        "previous",
+        "all"
+      ]
+    },
+    "highlightItems": [
+      {
+        "id": 21911963,
+        "trackName": "Nebula",
+        "artistName": "K.LAW",
+        "labelName": null,
+        "uArtistIds": null,
+        "uLabelIds": null,
+        "uTrackReleaseDate": "2025-11-26",
+        "idUnique": "2ujhryx6",
+        "avatarFullpath": "https://i.scdn.co/image/ab67616d00001e0283debb6d0d562f2b123fc087",
+        "date": "2025-12-02",
+        "subjectData": {
+          "message": "583K Followers"
+        },
+        "trackData": [
+          {
+            "id": 1,
+            "count": "",
+            "message": ""
+          },
+          {
+            "id": 2,
+            "count": "",
+            "message": "Playlist"
+          }
+        ],
+        "actionDescriptorText": "Playlisted on ",
+        "actionSubjectText": "top hits 2000-2026",
+        "secondaryDescriptorText": "by ",
+        "secondarySubjectText": "oldskool",
+        "hasChartPosition": null,
+        "useSecondaryFeedActionIcon": false,
+        "customFeedActionIconName": "playlist",
+        "notificationText": "Playlisted by oldskool on top hits 2000-2026 (583K Followers)",
+        "twitterSharePath": null,
+        "source": "spotify",
+        "isRadiostatsOnly": false,
+        "baseUrl": "/track/2ujhryx6/nebula",
+        "canvasUrl": null,
+        "mediaType": null,
+        "screenwork": null,
+        "externalUrl": "http://open.spotify.com/playlist/7E3uEa1emOcbZJuB8sFXeK",
+        "largeAvatarFullpath": "https://i.scdn.co/image/ab67616d0000b27383debb6d0d562f2b123fc087",
+        "secondaryAvatarFullpath": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84204c28bea315890d359083d7",
+        "shareDescriptorText": "Listen now on ",
+        "shareSubjectText": "top hits 2000-2026",
+        "isArtistStyle": null,
+        "rank": "6.97",
+        "tier": 1,
+        "commentText": "\"Nebula\" got added to 'top hits 2000-2026' with over 583K Followers on Spotify!",
+        "isMilestone": null,
+        "storyIdentifier": "SpotifyPlaylistsTrack-765730490",
+        "isAlbum": false,
+        "activityType": "playlist",
+        "activityNotificationId": "SpotifyPlaylistsTrack-765730490",
+        "popupIdUnique": "7E3uEa1emOcbZJuB8sFXeK",
+        "popupType": "spotify_playlist",
+        "popupStyle": "playlist_detail",
+        "isHighlight": false,
+        "hasViewedAsStory": false,
+        "isEntityActivity": false,
+        "routeDescription": "See track analytics",
+        "analyticsTrackTableId": "spotify_playlists",
+        "artists": [
+          {
+            "name": "K.LAW",
+            "songstatsArtistId": "y4ku2hlc"
+          }
+        ],
+        "title": null,
+        "creatorName": null,
+        "secondaryCreatorName": null,
+        "originalPostDate": null,
+        "uCreatorId": null
+      },
+      {
+        "id": 34897684,
+        "trackName": "Move On",
+        "artistName": "K.LAW",
+        "labelName": null,
+        "uArtistIds": null,
+        "uLabelIds": null,
+        "uTrackReleaseDate": "2026-07-23",
+        "idUnique": "fapvrz4k",
+        "avatarFullpath": "https://i.scdn.co/image/ab67616d00001e02bb2ab45fa2679cbd6c3ef427",
+        "date": "2026-08-03",
+        "subjectData": {},
+        "trackData": [
+          {
+            "id": 1,
+            "count": "",
+            "message": ""
+          },
+          {
+            "id": 2,
+            "count": "",
+            "message": "Editorial Playlist"
+          }
+        ],
+        "actionDescriptorText": "Playlisted on ",
+        "actionSubjectText": "triple j Unearthed Best New Music",
+        "secondaryDescriptorText": "by ",
+        "secondarySubjectText": "Unknown",
+        "hasChartPosition": null,
+        "useSecondaryFeedActionIcon": false,
+        "customFeedActionIconName": "playlist",
+        "notificationText": "Playlisted by Unknown on triple j Unearthed Best New Music",
+        "twitterSharePath": null,
+        "source": "apple_music",
+        "isRadiostatsOnly": false,
+        "baseUrl": "/track/fapvrz4k/move-on",
+        "canvasUrl": null,
+        "mediaType": null,
+        "screenwork": null,
+        "externalUrl": "https://music.apple.com/us/playlist/triple-j-unearthed-best-new-music/pl.61d41a78c1de4a85a786320f0f338af7",
+        "largeAvatarFullpath": "https://i.scdn.co/image/ab67616d0000b273bb2ab45fa2679cbd6c3ef427",
+        "secondaryAvatarFullpath": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/59/ae/30/59ae3098-dc84-d9c8-1888-58f99dc15508/b3324b26-695e-4610-974a-d52b1c436948.png/120x120SC.DN01.webp",
+        "shareDescriptorText": "Listen now on ",
+        "shareSubjectText": "triple j Unearthed Best New Music",
+        "isArtistStyle": null,
+        "rank": "6.0",
+        "tier": 1,
+        "commentText": "\"Move On\" was added to the editorial playlist 'triple j Unearthed Best New Music' on Apple Music!",
+        "isMilestone": null,
+        "storyIdentifier": "AppleMusicPlaylistsTrack-10637238235-57710",
+        "isAlbum": false,
+        "activityType": "editorial_playlist",
+        "activityNotificationId": "AppleMusicPlaylistsTrack-10637238235-57710",
+        "popupIdUnique": "pl.61d41a78c1de4a85a786320f0f338af7",
+        "popupType": "apple_music_playlist",
+        "popupStyle": "playlist_detail",
+        "isHighlight": false,
+        "hasViewedAsStory": false,
+        "isEntityActivity": false,
+        "routeDescription": "See track analytics",
+        "analyticsTrackTableId": "apple_playlists",
+        "artists": [
+          {
+            "name": "K.LAW",
+            "songstatsArtistId": "y4ku2hlc"
+          }
+        ],
+        "title": null,
+        "creatorName": null,
+        "secondaryCreatorName": null,
+        "originalPostDate": null,
+        "uCreatorId": null
+      },
+      {
+        "id": 34806731,
+        "trackName": "Hold on Tight",
+        "artistName": "K.LAW",
+        "labelName": null,
+        "uArtistIds": null,
+        "uLabelIds": null,
+        "uTrackReleaseDate": "2026-03-04",
+        "idUnique": "4hxkfrda",
+        "avatarFullpath": "https://i.scdn.co/image/ab67616d00001e021147503ae73a8568259bec7a",
+        "date": "2026-09-08",
+        "subjectData": {
+          "message": "Canberra, Australia"
+        },
+        "trackData": [
+          {
+            "id": 1,
+            "count": "",
+            "message": ""
+          },
+          {
+            "id": 2,
+            "count": "",
+            "message": "Airplay Radio"
+          }
+        ],
+        "actionDescriptorText": "Played on",
+        "actionSubjectText": "ABC triple j Unearthed",
+        "secondaryDescriptorText": null,
+        "secondarySubjectText": null,
+        "hasChartPosition": null,
+        "useSecondaryFeedActionIcon": false,
+        "customFeedActionIconName": "radio",
+        "notificationText": "Played on ABC triple j Unearthed in Canberra, Australia",
+        "twitterSharePath": null,
+        "source": "radio",
+        "isRadiostatsOnly": true,
+        "baseUrl": "/track/4hxkfrda/hold-on-tight",
+        "canvasUrl": null,
+        "mediaType": null,
+        "screenwork": null,
+        "externalUrl": null,
+        "largeAvatarFullpath": "https://i.scdn.co/image/ab67616d0000b2731147503ae73a8568259bec7a",
+        "secondaryAvatarFullpath": null,
+        "shareDescriptorText": "Played on",
+        "shareSubjectText": "ABC triple j Unearthed",
+        "isArtistStyle": null,
+        "rank": "0.0",
+        "tier": 1,
+        "commentText": "\"Hold on Tight\" was played on ABC triple j Unearthed in Canberra, Australia!",
+        "isMilestone": null,
+        "storyIdentifier": "RadioStationTrack-10822495079",
+        "isAlbum": null,
+        "activityType": "radio",
+        "activityNotificationId": "RadioStationTrack-10822495079",
+        "popupIdUnique": null,
+        "popupType": null,
+        "popupStyle": null,
+        "isHighlight": false,
+        "hasViewedAsStory": false,
+        "isEntityActivity": false,
+        "routeDescription": "See track analytics",
+        "analyticsTrackTableId": "radio_stations",
+        "artists": [
+          {
+            "name": "K.LAW",
+            "songstatsArtistId": "y4ku2hlc"
+          }
+        ],
+        "title": null,
+        "creatorName": null,
+        "secondaryCreatorName": null,
+        "originalPostDate": null,
+        "uCreatorId": null
+      },
+      {
+        "id": 27368873,
+        "trackName": "Charcoal",
+        "artistName": "K.LAW, Am \u00c9lie",
+        "labelName": null,
+        "uArtistIds": null,
+        "uLabelIds": null,
+        "uTrackReleaseDate": "2026-02-20",
+        "idUnique": "swqmpeio",
+        "avatarFullpath": "https://i.scdn.co/image/ab67616d00001e027d7775725de402e2fe7b8407",
+        "date": "2026-06-13",
+        "subjectData": {
+          "message": "91.1K Subscribers",
+          "comment": "\u2764\u2764\u2764\u2764\u2764wow Ellie \u2764\ufe0f\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f, you nailed it \u2764"
+        },
+        "trackData": [
+          {
+            "id": 1,
+            "count": "",
+            "message": ""
+          },
+          {
+            "id": 2,
+            "count": "",
+            "message": "Comment"
+          }
+        ],
+        "actionDescriptorText": "New Comment by",
+        "actionSubjectText": "T.D.F Edits",
+        "secondaryDescriptorText": null,
+        "secondarySubjectText": null,
+        "hasChartPosition": null,
+        "useSecondaryFeedActionIcon": false,
+        "customFeedActionIconName": "comments",
+        "notificationText": "New Comment by T.D.F Edits (91.1K Subscribers)",
+        "twitterSharePath": null,
+        "source": "youtube",
+        "isRadiostatsOnly": false,
+        "baseUrl": "/track/swqmpeio/charcoal",
+        "canvasUrl": null,
+        "mediaType": null,
+        "screenwork": null,
+        "externalUrl": "https://www.youtube.com/watch?v=mpY3euNm99E&lc=UgwunXZkOh1iyOI408N4AaABAg",
+        "largeAvatarFullpath": "https://i.scdn.co/image/ab67616d0000b2737d7775725de402e2fe7b8407",
+        "secondaryAvatarFullpath": "https://yt3.ggpht.com/xK0wjt2zZa2jJg2mUX8RnrgjjwWDC1qenAnje181byMd72o7X1fC2eDA7pHURbRbiWzQkCZDgQ=s240-c-k-c0x00ffffff-no-rj",
+        "shareDescriptorText": "New Comment by",
+        "shareSubjectText": "T.D.F Edits",
+        "isArtistStyle": null,
+        "rank": "1.93",
+        "tier": 2,
+        "commentText": "T.D.F Edits just commented on \"Charcoal\"!",
+        "isMilestone": null,
+        "storyIdentifier": "YoutubeComment-2652052645",
+        "isAlbum": null,
+        "activityType": "comment",
+        "activityNotificationId": "YoutubeComment-2652052645",
+        "popupIdUnique": "UCG2wJys6Z7FIVtEe2tgF4aw",
+        "popupType": "youtube_source_creator",
+        "popupStyle": "creator_comments",
+        "isHighlight": false,
+        "hasViewedAsStory": false,
+        "isEntityActivity": false,
+        "routeDescription": "See track analytics",
+        "analyticsTrackTableId": "youtube_comments",
+        "artists": [
+          {
+            "name": "K.LAW",
+            "songstatsArtistId": "y4ku2hlc"
+          },
+          {
+            "name": "Am \u00c9lie",
+            "songstatsArtistId": "96q7eo0d"
+          }
+        ],
+        "title": null,
+        "creatorName": null,
+        "secondaryCreatorName": null,
+        "originalPostDate": null,
+        "uCreatorId": null
+      },
+      {
+        "id": 27368873,
+        "trackName": "Charcoal",
+        "artistName": "K.LAW, Am \u00c9lie",
+        "labelName": null,
+        "uArtistIds": null,
+        "uLabelIds": null,
+        "uTrackReleaseDate": "2026-02-20",
+        "idUnique": "swqmpeio",
+        "avatarFullpath": "https://i.scdn.co/image/ab67616d00001e027d7775725de402e2fe7b8407",
+        "date": "2026-06-05",
+        "subjectData": {
+          "message": "15.1K Followers"
+        },
+        "trackData": [
+          {
+            "id": 1,
+            "count": "",
+            "message": ""
+          },
+          {
+            "id": 2,
+            "count": "",
+            "message": "Video"
+          }
+        ],
+        "actionDescriptorText": "New video by",
+        "actionSubjectText": "Am E\u0301lie",
+        "secondaryDescriptorText": null,
+        "secondarySubjectText": null,
+        "hasChartPosition": null,
+        "useSecondaryFeedActionIcon": true,
+        "customFeedActionIconName": null,
+        "notificationText": "New video by Am E\u0301lie (15.1K Followers)",
+        "twitterSharePath": null,
+        "source": "instagram",
+        "isRadiostatsOnly": false,
+        "baseUrl": "/track/swqmpeio/charcoal",
+        "canvasUrl": null,
+        "mediaType": null,
+        "screenwork": null,
+        "externalUrl": "https://www.instagram.com/p/DWgNQFYkRz-/",
+        "largeAvatarFullpath": "https://i.scdn.co/image/ab67616d0000b2737d7775725de402e2fe7b8407",
+        "secondaryAvatarFullpath": "https://cdn.songstats.com/creator/instagram/44558361778?v=1789889000&Expires=1791763200&Signature=aIMwQ5FpLLTeCkPHSz8jGpPiivQblQJNp~qvEjJEwLLIiHnWuuFODrHDlnJzp9LF~pRlJmP7AfGOsqUW8EZrCZqiFFyiziLuwX8oSlq~EnGjNPbdDftHy-iOyQpjEsjNq0zSlongPVekQ-nSxDugGDTN2gZdWA9L1qvyOFSF27EhoU37vG46YrZi3RHH1Er67DmP51ibrEnL~CWpxpxIL8sPr5fDcL5WU7JP1vdAvV~qHrJlntcwRzU1wuQFnnHTqjyNq9HluhRJuCvnJ~TMZ~k34XWWk8UJgetRhPGRuHkq9QEhYnoncqx-~ZcOAvye4iuvB7SG9rSzmtuebMLg-A__&Key-Pair-Id=K1E34TX95U2X7E",
+        "shareDescriptorText": "New video by",
+        "shareSubjectText": "Am E\u0301lie",
+        "isArtistStyle": true,
+        "rank": "2.3",
+        "tier": 3,
+        "commentText": "\"Charcoal\" just got picked up by famous influencer Am E\u0301lie who has over 15.1K Followers on Instagram!",
+        "isMilestone": null,
+        "storyIdentifier": "InstagramPost-165496117",
+        "isAlbum": null,
+        "activityType": "video",
+        "activityNotificationId": "InstagramPost-165496117",
+        "popupIdUnique": "44558361778",
+        "popupType": "instagram_source_creator",
+        "popupStyle": "creator_detail",
+        "isHighlight": false,
+        "hasViewedAsStory": false,
+        "isEntityActivity": false,
+        "routeDescription": "See track analytics",
+        "analyticsTrackTableId": "instagram_videos",
+        "artists": [
+          {
+            "name": "K.LAW",
+            "songstatsArtistId": "y4ku2hlc"
+          },
+          {
+            "name": "Am \u00c9lie",
+            "songstatsArtistId": "96q7eo0d"
+          }
+        ],
+        "title": null,
+        "creatorName": null,
+        "secondaryCreatorName": null,
+        "originalPostDate": null,
+        "uCreatorId": null
+      },
+      {
+        "id": 19810185,
+        "trackName": "Promises",
+        "artistName": "K.LAW, \u00c9TIENNE, Klaw",
+        "labelName": null,
+        "uArtistIds": null,
+        "uLabelIds": null,
+        "uTrackReleaseDate": "2023-10-12",
+        "idUnique": "efjxau5t",
+        "avatarFullpath": "https://i.scdn.co/image/ab67616d00001e025074c09dac1e3f2371336413",
+        "date": "2026-04-24",
+        "subjectData": {
+          "message": "1208 Followers"
+        },
+        "trackData": [
+          {
+            "id": 1,
+            "count": "",
+            "message": ""
+          },
+          {
+            "id": 2,
+            "count": "",
+            "message": "Video"
+          }
+        ],
+        "actionDescriptorText": "New video by",
+        "actionSubjectText": "DJ Jaearle \ud83d\udc41\ud83d\ude48\ud83c\udfa7",
+        "secondaryDescriptorText": null,
+        "secondarySubjectText": null,
+        "hasChartPosition": null,
+        "useSecondaryFeedActionIcon": true,
+        "customFeedActionIconName": null,
+        "notificationText": "New video by DJ Jaearle \ud83d\udc41\ud83d\ude48\ud83c\udfa7 (1208 Followers)",
+        "twitterSharePath": null,
+        "source": "tiktok",
+        "isRadiostatsOnly": false,
+        "baseUrl": "/track/efjxau5t/promises",
+        "canvasUrl": null,
+        "mediaType": null,
+        "screenwork": null,
+        "externalUrl": "https://www.tiktok.com/@tiktok/video/7585678378464759062",
+        "largeAvatarFullpath": "https://i.scdn.co/image/ab67616d0000b2735074c09dac1e3f2371336413",
+        "secondaryAvatarFullpath": "https://p16-common.tiktokcdn.com/tos-maliva-avt-0068/cf027b8ab44ed5d1e53e63e26051e124~c5_300x300.webp",
+        "shareDescriptorText": "New video by",
+        "shareSubjectText": "DJ Jaearle \ud83d\udc41\ud83d\ude48\ud83c\udfa7",
+        "isArtistStyle": true,
+        "rank": "1.74",
+        "tier": 4,
+        "commentText": "\"Promises\" is going viral on TikTok! Check out the video by DJ Jaearle \ud83d\udc41\ud83d\ude48\ud83c\udfa7 who has over 1208 Followers: https://www.tiktok.com/@tiktok/video/7585678378464759062",
+        "isMilestone": null,
+        "storyIdentifier": "TiktokPost-3663613120",
+        "isAlbum": null,
+        "activityType": "video",
+        "activityNotificationId": "TiktokPost-3663613120",
+        "popupIdUnique": "7570376040959853590",
+        "popupType": "tiktok_source_creator",
+        "popupStyle": "creator_detail",
+        "isHighlight": false,
+        "hasViewedAsStory": false,
+        "isEntityActivity": false,
+        "routeDescription": "See track analytics",
+        "analyticsTrackTableId": "tiktok_videos",
+        "artists": [
+          {
+            "name": "K.LAW",
+            "songstatsArtistId": "y4ku2hlc"
+          },
+          {
+            "name": "\u00c9TIENNE",
+            "songstatsArtistId": "mjdnkuvr"
+          }
+        ],
+        "title": null,
+        "creatorName": null,
+        "secondaryCreatorName": null,
+        "originalPostDate": null,
+        "uCreatorId": null
+      }
+    ]
+  },
+  "trackData": {
+    "relatedTracks": [
+      {
+        "headerText": "Recent Releases",
+        "relatedTracks": [
+          {
+            "id": 34897684,
+            "idUnique": "fapvrz4k",
+            "trackName": "Move On",
+            "artistName": "K.LAW",
+            "baseUrl": "/track/fapvrz4k/move-on",
+            "imageUrl": "https://i.scdn.co/image/ab67616d00001e02bb2ab45fa2679cbd6c3ef427",
+            "releaseDate": "2026-07-23"
+          },
+          {
+            "id": 34806731,
+            "idUnique": "4hxkfrda",
+            "trackName": "Hold on Tight",
+            "artistName": "K.LAW",
+            "baseUrl": "/track/4hxkfrda/hold-on-tight",
+            "imageUrl": "https://i.scdn.co/image/ab67616d00001e021147503ae73a8568259bec7a",
+            "releaseDate": "2026-03-04"
+          },
+          {
+            "id": 27368873,
+            "idUnique": "swqmpeio",
+            "trackName": "Charcoal",
+            "artistName": "Am \u00c9lie, K.LAW",
+            "baseUrl": "/track/swqmpeio/charcoal",
+            "imageUrl": "https://i.scdn.co/image/ab67616d00001e027d7775725de402e2fe7b8407",
+            "releaseDate": "2026-02-20"
+          },
+          {
+            "id": 21911963,
+            "idUnique": "2ujhryx6",
+            "trackName": "Nebula",
+            "artistName": "K.LAW",
+            "baseUrl": "/track/2ujhryx6/nebula",
+            "imageUrl": "https://i.scdn.co/image/ab67616d00001e0283debb6d0d562f2b123fc087",
+            "releaseDate": "2025-11-26"
+          },
+          {
+            "id": 20776833,
+            "idUnique": "w8hoeyau",
+            "trackName": "Q.U.E.E.N",
+            "artistName": "K.LAW",
+            "baseUrl": "/track/w8hoeyau/q-u-e-e-n",
+            "imageUrl": "https://i.scdn.co/image/ab67616d00001e02861732af136311a9888e4c27",
+            "releaseDate": "2025-09-11"
+          }
+        ]
+      }
+    ],
+    "listData": [
+      {
+        "headerText": "Top Performing Tracks",
+        "buttons": [
+          {
+            "title": "Popularity",
+            "rankType": "popularity_current",
+            "buttonId": "popularity_current",
+            "tooltip": "The top performing tracks ranked by current popularity."
+          },
+          {
+            "title": "Playlist Reach",
+            "rankType": "playlist_reach_current",
+            "buttonId": "playlist_reach_current",
+            "tooltip": "The top playlisted tracks ranked by current follower reach."
+          }
+        ],
+        "descriptors": [
+          {
+            "text": "Track",
+            "value": "Popularity (Current)"
+          }
+        ],
+        "items": [
+          [
+            {
+              "id": 34897684,
+              "idUnique": "fapvrz4k",
+              "popupIdUnique": "fapvrz4k",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Move On",
+              "trackName": "Move On",
+              "secondaryText": "K.LAW",
+              "artistName": "K.LAW",
+              "baseUrl": "/track/fapvrz4k/move-on",
+              "externalUrl": null,
+              "primaryValue": "16%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e02bb2ab45fa2679cbd6c3ef427",
+              "previewUrl": "https://p.scdn.co/mp3-preview/0170f4e7bc24fa2dc76076a9c0247b35a11699fe",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 20155607,
+              "idUnique": "jikpa7dz",
+              "popupIdUnique": "jikpa7dz",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Don't Let Me Down",
+              "trackName": "Don't Let Me Down",
+              "secondaryText": "K.LAW",
+              "artistName": "K.LAW",
+              "baseUrl": "/track/jikpa7dz/don-t-let-me-down",
+              "externalUrl": null,
+              "primaryValue": "10%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e021b1120bd32a82bf35a313918",
+              "previewUrl": "https://p.scdn.co/mp3-preview/290cfd0344a70efe9d1d055d9c474e48c9c47d89",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 27368873,
+              "idUnique": "swqmpeio",
+              "popupIdUnique": "swqmpeio",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Charcoal",
+              "trackName": "Charcoal",
+              "secondaryText": "Am \u00c9lie, K.LAW",
+              "artistName": "Am \u00c9lie, K.LAW",
+              "baseUrl": "/track/swqmpeio/charcoal",
+              "externalUrl": null,
+              "primaryValue": "4%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e027d7775725de402e2fe7b8407",
+              "previewUrl": "https://p.scdn.co/mp3-preview/44ab4aaee894988c81a7fbece61dedd0ff5eb115",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 34806731,
+              "idUnique": "4hxkfrda",
+              "popupIdUnique": "4hxkfrda",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Hold on Tight",
+              "trackName": "Hold on Tight",
+              "secondaryText": "K.LAW",
+              "artistName": "K.LAW",
+              "baseUrl": "/track/4hxkfrda/hold-on-tight",
+              "externalUrl": null,
+              "primaryValue": "4%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e021147503ae73a8568259bec7a",
+              "previewUrl": "https://p.scdn.co/mp3-preview/a174f7df08bedbae46acfc21e4afbe9f24c9c955",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 13744131,
+              "idUnique": "b92dwezv",
+              "popupIdUnique": "b92dwezv",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Betcha Didn't Know",
+              "trackName": "Betcha Didn't Know",
+              "secondaryText": "K.LAW",
+              "artistName": "K.LAW",
+              "baseUrl": "/track/b92dwezv/betcha-didn-t-know",
+              "externalUrl": null,
+              "primaryValue": "3%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e02b5a8056f5b95155be3bedb33",
+              "previewUrl": "https://p.scdn.co/mp3-preview/3afadeba9376bedefa1ababe1b2a8f4a03d4af76",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 13715387,
+              "idUnique": "hcxsmdb0",
+              "popupIdUnique": "hcxsmdb0",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Got You",
+              "trackName": "Got You",
+              "secondaryText": "K.LAW",
+              "artistName": "K.LAW",
+              "baseUrl": "/track/hcxsmdb0/got-you",
+              "externalUrl": null,
+              "primaryValue": "2%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e02d28151b527dcaa8cdc5c5732",
+              "previewUrl": "https://p.scdn.co/mp3-preview/17ce266d269360ce64e0756c88ef487d75076491",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 20776833,
+              "idUnique": "w8hoeyau",
+              "popupIdUnique": "w8hoeyau",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Q.U.E.E.N",
+              "trackName": "Q.U.E.E.N",
+              "secondaryText": "K.LAW",
+              "artistName": "K.LAW",
+              "baseUrl": "/track/w8hoeyau/q-u-e-e-n",
+              "externalUrl": null,
+              "primaryValue": "1%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e02861732af136311a9888e4c27",
+              "previewUrl": "https://p.scdn.co/mp3-preview/bcc9835ce368867732f3785ea6ab08d669b30376",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 21911963,
+              "idUnique": "2ujhryx6",
+              "popupIdUnique": "2ujhryx6",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Nebula",
+              "trackName": "Nebula",
+              "secondaryText": "K.LAW",
+              "artistName": "K.LAW",
+              "baseUrl": "/track/2ujhryx6/nebula",
+              "externalUrl": null,
+              "primaryValue": "1%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e0283debb6d0d562f2b123fc087",
+              "previewUrl": "https://p.scdn.co/mp3-preview/7488c90770cb3a9baedfdfaab76cae4d4b306d15",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 13715256,
+              "idUnique": "d7acjqnk",
+              "popupIdUnique": "d7acjqnk",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Your Name",
+              "trackName": "Your Name",
+              "secondaryText": "K.LAW, \u00c9TIENNE",
+              "artistName": "K.LAW, \u00c9TIENNE",
+              "baseUrl": "/track/d7acjqnk/your-name",
+              "externalUrl": null,
+              "primaryValue": "1%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e024e307140b24b84b249582884",
+              "previewUrl": "https://p.scdn.co/mp3-preview/f09a725b51faddd0d506b108e7afb7dd0efbce97",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            },
+            {
+              "id": 19810185,
+              "idUnique": "efjxau5t",
+              "popupIdUnique": "efjxau5t",
+              "popupType": null,
+              "popupStyle": null,
+              "primaryText": "Promises",
+              "trackName": "Promises",
+              "secondaryText": "\u00c9TIENNE, K.LAW, Klaw",
+              "artistName": "\u00c9TIENNE, K.LAW, Klaw",
+              "baseUrl": "/track/efjxau5t/promises",
+              "externalUrl": null,
+              "primaryValue": "1%",
+              "secondaryValue": null,
+              "imageUrl": "https://i.scdn.co/image/ab67616d00001e025074c09dac1e3f2371336413",
+              "previewUrl": "https://p.scdn.co/mp3-preview/11ae72df6a097a3841c1a5b94cabcd7d11fd436f",
+              "arrow": null,
+              "isAlbum": null,
+              "hasInternalLink": null
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "eventData": null,
+  "syncData": null
+}
