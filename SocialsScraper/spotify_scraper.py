@@ -1,9 +1,13 @@
 """
-spotify_scraper.py - Local Zero-Cost Spotify Public Metrics Scraper
+spotify_scraper.py - Zero-Cost Local Spotify Analytics Scraper
 
-Extracts public artist metrics (Monthly Listeners, Followers, Top Track Streams)
-from Spotify's web player infrastructure without an authenticated API app token.
-Persists normalized metrics into SQLite (socials_cache.db) with 24-hr TTL support.
+Features:
+- 100% Free: No Spotify Developer Account or Premium subscription required.
+- TLS browser impersonation via curl_cffi to bypass Akamai/Cloudflare blocks.
+- Anonymous Web Player token harvesting.
+- Extracts: Monthly Listeners, Followers, Top 10 Play Counts, Top Cities, World Rank.
+- Calculates: Stickiness Ratio %, Top Track Concentration %.
+- Atomic SQLite persistence: metrics_cache (TTL) + historical_metrics (deduplicated deltas).
 """
 
 import json
@@ -14,7 +18,6 @@ import sys
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional, Tuple
 
-# Attempt import of curl_cffi for TLS fingerprint impersonation; fall back to requests
 try:
     from curl_cffi import requests as cffi_requests
     HAS_CURL_CFFI = True
@@ -22,7 +25,6 @@ except ImportError:
     import requests as cffi_requests
     HAS_CURL_CFFI = False
 
-# Setup logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
@@ -30,13 +32,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Constants & Configuration
 DEFAULT_DB_PATH = "socials_cache.db"
 TARGET_ARTIST_ID = "3fNvLxWjqCfeHwBYtHmuGI"  # K.LAW (Joshua Kalaw)
 
 PATHFINDER_URL = "https://api-partner.spotify.com/pathfinder/v1/query"
-
-# Persisted query hashes for queryArtistOverview known to Spotify's web client
 ARTIST_OVERVIEW_HASHES = [
     "433e28d1e949372d3ca3aa6c47975cff428b5dc37b12f5325d9213accadf770a",
     "d66221ea13998b2f81883c5187d174c8646e4041d67f5b1e103bc262d447e3a0",
@@ -55,7 +54,7 @@ DEFAULT_HEADERS = {
 
 
 def _get_session():
-    """Initializes a requests or curl_cffi session with browser emulation."""
+    """Initializes session with Chrome TLS fingerprinting to bypass anti-bot blocks."""
     if HAS_CURL_CFFI:
         return cffi_requests.Session(impersonate="chrome124")
     session = cffi_requests.Session()
@@ -63,68 +62,36 @@ def _get_session():
     return session
 
 
-def fetch_anonymous_token_and_embed_data(artist_id: str) -> Tuple[Optional[str], Optional[dict]]:
-    """
-    Scrapes the Spotify Embed page for the artist.
-    Extracts the anonymous Bearer token and fallback SSR hydration entity data.
-    """
+def fetch_anonymous_token(artist_id: str) -> Optional[str]:
+    """Harvests an ephemeral anonymous Web Player token from the artist's embed page."""
     embed_url = f"https://open.spotify.com/embed/artist/{artist_id}"
     session = _get_session()
 
     try:
-        logger.info("Harvesting anonymous token from embed page: %s", embed_url)
         response = session.get(embed_url, timeout=12)
         if response.status_code != 200:
-            logger.warning("Embed page returned HTTP %d", response.status_code)
-            return None, None
+            return None
 
-        html = response.text
-        match = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.DOTALL)
+        match = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', response.text, re.DOTALL)
         if not match:
-            logger.warning("Could not locate __NEXT_DATA__ in embed page HTML.")
-            return None, None
+            return None
 
         data = json.loads(match.group(1))
-        page_props = data.get("props", {}).get("pageProps", {})
-
-        # Extract anonymous accessToken from state settings session
-        token = (
-            page_props.get("state", {})
+        return (
+            data.get("props", {})
+            .get("pageProps", {})
+            .get("state", {})
             .get("settings", {})
             .get("session", {})
             .get("accessToken")
         )
-
-        # In case the JSON structure slightly shifts, search recursively
-        if not token:
-            def find_key(obj, target):
-                if isinstance(obj, dict):
-                    for k, v in obj.items():
-                        if k == target and isinstance(v, str):
-                            return v
-                        res = find_key(v, target)
-                        if res:
-                            return res
-                elif isinstance(obj, list):
-                    for item in obj:
-                        res = find_key(item, target)
-                        if res:
-                            return res
-                return None
-            token = find_key(data, "accessToken")
-
-        embed_entity = page_props.get("state", {}).get("data", {}).get("entity")
-        return token, embed_entity
-
     except Exception as exc:
-        logger.error("Error retrieving anonymous token: %s", exc)
-        return None, None
+        logger.warning("Error retrieving anonymous token: %s", exc)
+        return None
 
 
 def fetch_artist_overview_graphql(artist_id: str, access_token: str) -> Optional[dict]:
-    """
-    Queries Spotify's Pathfinder GraphQL API using the anonymous Bearer token.
-    """
+    """Queries Spotify's internal Pathfinder GraphQL API using the anonymous Bearer token."""
     session = _get_session()
     headers = {
         **DEFAULT_HEADERS,
@@ -155,34 +122,25 @@ def fetch_artist_overview_graphql(artist_id: str, access_token: str) -> Optional
             if resp.status_code == 200:
                 result = resp.json()
                 if "data" in result and result["data"]:
-                    logger.info("Successfully fetched GraphQL overview with hash %s...", sha256_hash[:8])
                     return result["data"]
             elif resp.status_code == 400:
-                # Hash mismatch; continue to next hash
                 continue
-            else:
-                logger.warning("GraphQL query returned HTTP %d with hash %s...", resp.status_code, sha256_hash[:8])
-        except Exception as exc:
-            logger.warning("GraphQL request error with hash %s: %s", sha256_hash[:8], exc)
+        except Exception:
+            continue
 
     return None
 
 
 def fetch_artist_page_fallback(artist_id: str) -> Dict[str, int]:
-    """
-    Scrapes the public artist HTML profile to extract monthly listeners
-    from Open Graph or meta descriptions if GraphQL is unreachable.
-    """
+    """Fallback: Regex parsing from public HTML if GraphQL hashes rotate."""
     artist_url = f"https://open.spotify.com/artist/{artist_id}"
     session = _get_session()
-    metrics = {"monthly_listeners": 0, "followers": 0}
+    metrics = {"monthly_listeners": 0}
 
     try:
         resp = session.get(artist_url, timeout=12)
         if resp.status_code == 200:
-            html = resp.text
-            # Look for patterns like "15,200 monthly listeners" or "1.5M monthly listeners"
-            match = re.search(r'([\d,\.]+[KkMmBb]?)\s+monthly\s+listeners', html, re.IGNORECASE)
+            match = re.search(r'([\d,\.]+[KkMmBb]?)\s+monthly\s+listeners', resp.text, re.IGNORECASE)
             if match:
                 raw_str = match.group(1).replace(",", "").strip()
                 if raw_str.upper().endswith("K"):
@@ -194,20 +152,19 @@ def fetch_artist_page_fallback(artist_id: str) -> Dict[str, int]:
                 else:
                     metrics["monthly_listeners"] = int(float(raw_str))
     except Exception as exc:
-        logger.error("Fallback artist page scraping failed: %s", exc)
+        logger.warning("Fallback artist page scraping failed: %s", exc)
 
     return metrics
 
 
 def scrape_spotify_artist(artist_id: str) -> Dict[str, Any]:
-    """
-    Task 1 & Task 2: Coordinates extraction, parsing, and normalization
-    into the required JSON schema.
-    """
-    token, embed_entity = fetch_anonymous_token_and_embed_data(artist_id)
+    """Coordinates scraping and normalization without any developer credentials."""
+    token = fetch_anonymous_token(artist_id)
 
     monthly_listeners = 0
     followers = 0
+    world_rank: Optional[int] = None
+    top_cities: List[Dict[str, Any]] = []
     track_streams: List[int] = []
 
     graphql_success = False
@@ -215,57 +172,69 @@ def scrape_spotify_artist(artist_id: str) -> Dict[str, Any]:
     if token:
         overview_data = fetch_artist_overview_graphql(artist_id, token)
         if overview_data:
-            artist_union = (
-                overview_data.get("artistUnion")
-                or overview_data.get("artist")
-                or {}
-            )
+            artist_union = overview_data.get("artistUnion") or overview_data.get("artist") or {}
             stats = artist_union.get("stats", {})
             monthly_listeners = int(stats.get("monthlyListeners") or 0)
             followers = int(stats.get("followers") or 0)
 
-            # Extract track play counts
-            top_tracks_obj = (
-                artist_union.get("discography", {}).get("topTracks", {})
-                or {}
-            )
-            track_items = top_tracks_obj.get("items", [])
+            # World Rank
+            raw_world_rank = stats.get("worldRank")
+            if raw_world_rank is not None:
+                try:
+                    world_rank = int(raw_world_rank)
+                except (ValueError, TypeError):
+                    world_rank = None
 
-            for item in track_items:
-                track = item.get("track", {})
-                playcount_val = track.get("playcount")
-                if playcount_val is not None:
+            # Top Cities
+            for c in stats.get("topCities", {}).get("items", []):
+                city_name = c.get("city")
+                if city_name:
+                    top_cities.append({
+                        "city": str(city_name),
+                        "country": str(c.get("country") or ""),
+                        "listeners": int(c.get("numberOfListeners") or 0)
+                    })
+
+            # Stream counts for top tracks
+            top_tracks_obj = artist_union.get("discography", {}).get("topTracks", {}) or {}
+            for item in top_tracks_obj.get("items", []):
+                playcount = item.get("track", {}).get("playcount")
+                if playcount is not None:
                     try:
-                        track_streams.append(int(playcount_val))
+                        track_streams.append(int(playcount))
                     except (ValueError, TypeError):
                         continue
             graphql_success = True
 
-    # Fallback to embed data or main HTML if GraphQL failed or returned empty
+    # Fallback to HTML if GraphQL failed
     if not graphql_success or (monthly_listeners == 0 and followers == 0):
-        logger.info("Applying fallback parsing from HTML/embed entities...")
         fallback_stats = fetch_artist_page_fallback(artist_id)
         if monthly_listeners == 0:
             monthly_listeners = fallback_stats.get("monthly_listeners", 0)
 
-    # If stream counts could not be retrieved from GraphQL, ensure safe handling
+    # Calculate stream aggregates safely
     top_1_streams = track_streams[0] if len(track_streams) >= 1 else 0
     top_10_cumulative = sum(track_streams[:10]) if track_streams else 0
 
-    # Normalization payload according to expected schema
-    payload = {
+    # Derived calculations
+    stickiness_ratio = round((followers / monthly_listeners * 100), 2) if monthly_listeners > 0 else 0.0
+    top_track_concentration = round((top_1_streams / top_10_cumulative * 100), 2) if top_10_cumulative > 0 else 0.0
+
+    return {
         "artist_id": str(artist_id),
         "spotify_monthly_listeners": int(monthly_listeners),
         "spotify_followers": int(followers),
         "spotify_top_track_1_streams": int(top_1_streams),
-        "spotify_top_10_cumulative_streams": int(top_10_cumulative)
+        "spotify_top_10_cumulative_streams": int(top_10_cumulative),
+        "spotify_world_rank": world_rank,
+        "spotify_top_cities": top_cities,
+        "stickiness_ratio_pct": stickiness_ratio,
+        "top_track_concentration_pct": top_track_concentration
     }
-
-    return payload
 
 
 def init_db(conn: sqlite3.Connection) -> None:
-    """Ensures cache and historical tables exist before running queries."""
+    """Ensures cache and historical tables exist."""
     with conn:
         conn.execute("""
             CREATE TABLE IF NOT EXISTS metrics_cache (
@@ -286,49 +255,44 @@ def init_db(conn: sqlite3.Connection) -> None:
 
 
 def save_to_cache(conn: sqlite3.Connection, artist_id: str, new_data: Dict[str, Any]) -> None:
-    """
-    Saves metrics with delta calculation and deduplication:
-    1. Compares against existing metrics_cache.
-    2. Computes deltas (e.g., diff in followers, streams).
-    3. Always UPSERTs metrics_cache (for TTL freshness).
-    4. Only INSERTS into historical_metrics if metrics have actually changed.
-    """
+    """Atomic save: Updates TTL in metrics_cache; logs to historical_metrics only on change."""
     now_iso = datetime.now(timezone.utc).isoformat()
-    
-    with conn:  # Atomic transaction
+
+    with conn:
         cursor = conn.cursor()
-        
-        # 1. Fetch previous data to compute changes
+
         cursor.execute("SELECT data FROM metrics_cache WHERE channel_id = ?", (artist_id,))
         row = cursor.fetchone()
-        
+
         has_changed = False
         deltas = {}
-        
+
+        trackable_keys = [
+            "spotify_monthly_listeners",
+            "spotify_followers",
+            "spotify_top_track_1_streams",
+            "spotify_top_10_cumulative_streams"
+        ]
+
         if row:
             old_data = json.loads(row[0])
-            # Calculate differences for numeric fields
-            for key in ["spotify_monthly_listeners", "spotify_followers", 
-                        "spotify_top_track_1_streams", "spotify_top_10_cumulative_streams"]:
-                old_val = old_data.get(key, 0)
-                new_val = new_data.get(key, 0)
+            for key in trackable_keys:
+                old_val = old_data.get(key) or 0
+                new_val = new_data.get(key) or 0
                 diff = new_val - old_val
                 deltas[f"delta_{key}"] = diff
                 if diff != 0:
                     has_changed = True
         else:
-            # First time seeing this artist: everything is new
             has_changed = True
-            for key in ["spotify_monthly_listeners", "spotify_followers", 
-                        "spotify_top_track_1_streams", "spotify_top_10_cumulative_streams"]:
-                deltas[f"delta_{key}"] = new_data.get(key, 0)
+            for key in trackable_keys:
+                deltas[f"delta_{key}"] = new_data.get(key) or 0
 
-        # Merge deltas into the payload for historical tracking
         historical_payload = {**new_data, "deltas": deltas}
         new_data_json = json.dumps(new_data, ensure_ascii=False)
         hist_data_json = json.dumps(historical_payload, ensure_ascii=False)
 
-        # 2. UPSERT into metrics_cache (maintains TTL)
+        # 1. Always UPSERT metrics_cache (Refreshes TTL)
         cursor.execute(
             """
             INSERT INTO metrics_cache (channel_id, data, updated_at)
@@ -340,7 +304,7 @@ def save_to_cache(conn: sqlite3.Connection, artist_id: str, new_data: Dict[str, 
             (artist_id, new_data_json, now_iso)
         )
 
-        # 3. Only record to historical_metrics if there was an actual change
+        # 2. Only INSERT into historical_metrics on actual metric changes
         if has_changed:
             cursor.execute(
                 """
@@ -349,9 +313,9 @@ def save_to_cache(conn: sqlite3.Connection, artist_id: str, new_data: Dict[str, 
                 """,
                 (artist_id, hist_data_json, now_iso)
             )
-            logger.info("Metrics changed for %s: recorded new historical entry with deltas.", artist_id)
+            logger.info("Recorded new historical entry with deltas for %s.", artist_id)
         else:
-            logger.info("No metrics changed for %s: updated TTL without duplicate historical entry.", artist_id)
+            logger.info("No metric changes detected for %s. Refreshed TTL without duplicate history.", artist_id)
 
 
 def main():
@@ -359,22 +323,22 @@ def main():
     if len(sys.argv) > 1:
         target_id = sys.argv[1]
 
-    logger.info("Starting Spotify public metrics scraper for ID: %s", target_id)
+    logger.info("Starting zero-cost Spotify metrics pipeline for ID: %s", target_id)
 
-    # 1. Scrape and Normalize
-    normalized_data = scrape_spotify_artist(target_id)
+    # 1. Scrape & Normalize
+    payload = scrape_spotify_artist(target_id)
     print("\n--- Extracted & Normalized Payload ---")
-    print(json.dumps(normalized_data, indent=2))
+    print(json.dumps(payload, indent=2))
 
-    # 2. Persist to SQLite
+    # 2. Persist with Deduplication & Deltas
     try:
         conn = sqlite3.connect(DEFAULT_DB_PATH)
         init_db(conn)
-        save_to_cache(conn, target_id, normalized_data)
+        save_to_cache(conn, target_id, payload)
         conn.close()
         logger.info("Pipeline executed successfully.")
-    except Exception as e:
-        logger.critical("Database pipeline error: %s", e)
+    except Exception as exc:
+        logger.critical("Database pipeline error: %s", exc)
         sys.exit(1)
 
 
