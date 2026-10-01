@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  # 1. The Background Scraper & Orchestrator
+  analytics-engine:
+    build: 
+      context: .
+      dockerfile: Dockerfile.engine
+    container_name: music_analytics_engine
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data:z    # <--- ADDED :z HERE
+    environment:
+      - YOUTUBE_API_KEY=${YOUTUBE_API_KEY}
+      - APIFY_API_TOKEN=${APIFY_API_TOKEN}
+      - TZ=Australia/Sydney
+
+  # 2. The Web Dashboard
+  analytics-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard
+    container_name: music_analytics_dashboard
+    restart: unless-stopped
+    ports:
+      - "8501:8501" 
+    volumes:
+      - ./data:/app/data:z    # <--- ADDED :z HERE
+    environment:
+      - TZ=Australia/Sydney

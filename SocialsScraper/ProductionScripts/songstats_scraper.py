@@ -979,6 +979,9 @@ def main():
     artist_id = extract_artist_id_from_url(args.artist)
     logger.info(f"Target Songstats Artist ID resolved to: {artist_id}")
 
+    # FIX: Initialize the database tables before checking the cache!
+    init_database(args.db)
+
     # Rule 5: 24-Hour Cache TTL Evaluation
     if not args.force and check_cache_ttl(artist_id=artist_id, db_path=args.db):
         logger.info("Orchestrator Notice: Ingestion skipped due to fresh cache. Exiting 0.")
